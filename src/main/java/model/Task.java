@@ -1,5 +1,7 @@
 package model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -15,6 +17,7 @@ public class Task implements Cloneable, Serializable {
     private int interval;
     private boolean active;
 
+    Logger logger = LoggerFactory.getLogger(Task.class);
     /**
      * Constructor for task without interval
      * @param title - name of task
@@ -26,7 +29,8 @@ public class Task implements Cloneable, Serializable {
         this.start = new Date(time*1000);
         this.end = new Date(time *1000);
         if (time < 0 ) {
-            throw new IllegalArgumentException ("Время или интервал не может быть отрицательным");
+            logger.error("The time can not be negative");
+            throw new IllegalArgumentException ("The time can not be negative");
         }
     }
 

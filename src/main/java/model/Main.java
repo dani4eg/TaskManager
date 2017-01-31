@@ -3,17 +3,31 @@ package model;
 import java.io.File;
 import java.text.ParseException;
 import java.util.Date;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by darthMilash on 30.01.2017.
  */
 public class Main {
 
+//    static Logger logger = LoggerFactory.getLogger(Main.class);
+//
+//    public static int sum(int a, int b) {
+//        return a+b;
+//    }
+
     public static void main(String[] args) throws IllegalArgumentException, ParseException {
+
+//        logger.info("Hello world");
+//
+//        int result = sum(4, 5);
+//        System.err.println("4 + 5 is " + result);
+
 
 
         Task task1 = new Task("Task1", new Date(1984731506202L), new Date(1984731506204L), 86400);
-        Task task2 = new Task("Task2", 1484743545);
+        Task task2 = new Task("Task2", -1484743545);
         Task task3 = new Task("Task3", new Date(1484731506204L), new Date(1984731506204L), 20000);
 
         Task task4 = new Task("Task4", new Date(1474731506204L), new Date(1984731506204L), 2000);

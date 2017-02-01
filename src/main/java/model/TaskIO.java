@@ -1,5 +1,8 @@
 package model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,6 +16,7 @@ import java.util.regex.Pattern;
  */
 public class TaskIO {
 
+    static Logger logger = LoggerFactory.getLogger(TaskIO.class);
     /**
      * Binary writing task in stream from task
      * @param tasks
@@ -24,8 +28,10 @@ public class TaskIO {
             for (Task task : tasks) {
                 out2.writeObject(task);
             }
+            logger.info("Binary writing task SUCCESSFUL");
         } catch (IOException e) {
-            System.out.println("Binary writing task in stream ERROR");
+            logger.error("Binary writing task in stream ERROR");
+            e.printStackTrace();
         }
     }
 
@@ -42,12 +48,15 @@ public class TaskIO {
                 try {
                     task = (Task) in2.readObject();
                 } catch (ClassNotFoundException e) {
+                    logger.error("Class not found");
                     e.printStackTrace();
                 }
                 tasks.add(task);
+                logger.info("Binary reading task SUCCESSFUL");
             }
         } catch (IOException e) {
-            System.out.println("Binary reading task from stream ERROR");
+            logger.error("Binary reading task from stream ERROR");
+            e.printStackTrace();
         }
     }
 
@@ -60,7 +69,8 @@ public class TaskIO {
         try (ObjectOutputStream out2 = new ObjectOutputStream(new FileOutputStream(file))) {
             write(tasks, out2);
         } catch (IOException e) {
-            System.out.println("Binary writing task in file ERROR");
+            logger.error("Binary writing task in file ERROR");
+            e.printStackTrace();
         }
     }
 
@@ -73,7 +83,8 @@ public class TaskIO {
         try (ObjectInputStream in2 = new ObjectInputStream(new FileInputStream(file))) {
             read(tasks, in2);
         } catch (IOException e) {
-            System.out.println("Binary reading task from file ERROR");
+            logger.error("Binary reading task from file ERROR");
+            e.printStackTrace();
         }
     }
 
@@ -95,8 +106,10 @@ public class TaskIO {
                     writer.write(".");
                 writer.newLine();
             }
+            logger.info("Text writing task SUCCESSFUL");
         } catch (IOException e) {
-            System.out.println("Text writing task in stream ERROR");
+            logger.error("Text writing task in stream ERROR");
+            e.printStackTrace();
         }
     }
 
@@ -112,8 +125,10 @@ public class TaskIO {
             while((str=reader.readLine())!=null){
                 tasks.add(splitString(str));
             }
+            logger.info("Text reading task SUCCESSFUL");
         }catch(IOException e){
-            System.out.println("Text reading task from stream ERROR");
+            logger.error("Text reading task from stream ERROR");
+            e.printStackTrace();
         }
 
     }
@@ -127,7 +142,8 @@ public class TaskIO {
         try (Writer writer = new FileWriter(file)) {
             write(tasks, writer);
         } catch (IOException e) {
-            System.out.println("Text writing task in file ERROR");
+            logger.error("Text writing task in file ERROR");
+            e.printStackTrace();
         }
     }
 
@@ -141,7 +157,8 @@ public class TaskIO {
         try (Reader reader = new FileReader(file)) {
             read(tasks, reader);
         }catch(IOException e){
-            System.out.println("Text reading task from file ERROR");
+            logger.error("Text reading task from file ERROR");
+            e.printStackTrace();
         }
     }
 

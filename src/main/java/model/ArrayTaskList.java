@@ -1,5 +1,8 @@
 package model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.text.SimpleDateFormat;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -9,6 +12,8 @@ import java.util.Arrays;
  * Created by darthMilash on 30.01.2017.
  */
 public class ArrayTaskList extends TaskList implements Cloneable {
+
+    Logger logger = LoggerFactory.getLogger(ArrayTaskList.class);
 
     /**
      * @param tasks создаем массив типа Task и не инициализируем его
@@ -41,13 +46,15 @@ public class ArrayTaskList extends TaskList implements Cloneable {
     public void add(Task task) throws NullPointerException
     {
         if (task == null ) {
-            throw new NullPointerException ("Добавление пустого элемента");
+            logger.error("Added empty element in ArrayList");
+            throw new NullPointerException ("Added empty element in ArrayList");
         }
         if (size >= tasks.length) {
             Task[] tArr = new Task[(size*3)/2 +1];
             System.arraycopy(tasks, 0, tArr, 0, size);
             tasks = tArr;
         }
+        logger.info("The \"" + task.getTitle() + "\" added to ArrayList");
         tasks[size] = task;
         size++;
     }
@@ -71,15 +78,18 @@ public class ArrayTaskList extends TaskList implements Cloneable {
     public boolean remove (Task task) throws NullPointerException
     {
         if (task == null ) {
-            throw new NullPointerException ("Удаление пустого элемента");
+            logger.error("Deleted empty element in ArrayList");
+            throw new NullPointerException ("Deleted empty element in ArrayList");
         }
         for (int i = 0; i < tasks.length; i++) {
             if (task.equals(tasks[i])) {
+                logger.info("The \"" + task.getTitle() + "\" deleted from ArrayList");
                 System.arraycopy(tasks, i+1, tasks, i, size-1);
                 size--;
                 return true;
             }
         }
+        logger.info("The element not found in ArrayList");
         return false;
     }
 
@@ -148,7 +158,6 @@ public class ArrayTaskList extends TaskList implements Cloneable {
         ArrayTaskList that = (ArrayTaskList) o;
         if (!Arrays.equals(tasks, that.tasks)) return false;
         return true;
-
     }
 
     @Override

@@ -1,5 +1,8 @@
 package model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.text.SimpleDateFormat;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -9,6 +12,7 @@ import java.util.NoSuchElementException;
  */
 public class LinkedTaskList extends TaskList implements Cloneable{
 
+    Logger logger = LoggerFactory.getLogger(LinkedTaskList.class);
     /**
      * Ссылка на первый элемент списка
      */
@@ -51,12 +55,14 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     @Override
     public void add(Task task) throws NullPointerException {
         if (task == null ) {
-            throw new NullPointerException ("Добавление пустого элемента");
+            logger.error("Added empty element in LinkedList");
+            throw new NullPointerException ("Added empty element in LinkedList");
         }
         Link newLink = new Link(task);
         newLink.next = first;
         first = newLink;
         size++;
+        logger.info("The \"" + task.getTitle() + "\" added to LinkedList");
     }
 
     /**
@@ -68,7 +74,8 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     @Override
     public Task getTask(int index) throws NullPointerException {
         if (index>=size()) {
-            throw new NullPointerException("Не существующий элемент");
+            logger.error("The element not found");
+            throw new NullPointerException("The element not found");
         }
         Link current = first;
         for (int i = 0; i < index; i++) {
@@ -88,12 +95,14 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     @Override
     public boolean remove (Task task)throws NullPointerException {
         if (task == null ) {
-            throw new NullPointerException ("Удаление пустого элемента");
+            logger.error("Deleted empty element in LinkedList");
+            throw new NullPointerException ("Deleted empty element in LinkedList");
         }
         Link current = first;
         Link prev = first;
         while (current.getTask()!=task) {
             if (current.getNext() == null) {
+                logger.info("The element not found in LinkedList");
                 return false;
             }
             else {
@@ -105,6 +114,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
             first = first.getNext();
         }
         else prev.setNext(current.getNext());
+        logger.info("The \"" + task.getTitle() + "\" deleted from LinkedList");
         size--;
         return true;
     }
@@ -127,7 +137,6 @@ public class LinkedTaskList extends TaskList implements Cloneable{
      */
     public Iterator iterator() {
         return new Iterator() {
-
             private Link current = first;
             private Link prev = null;
             private Link prev2 = null;
@@ -188,7 +197,6 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof LinkedTaskList)) return false;
-
         LinkedTaskList that = (LinkedTaskList) o;
         if (this.size() == that.size()) {
             Iterator list1 = this.iterator();
@@ -196,7 +204,6 @@ public class LinkedTaskList extends TaskList implements Cloneable{
             while (list1.hasNext()) {
                 Object o1 = list1.next();
                 Object o2 = list2.next();
-
                 if (!(o1 == null ? o2==null : o1.equals(o2))) {
                     return false;
                 }

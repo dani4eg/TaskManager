@@ -1,60 +1,59 @@
-2017-02-01 11:54:59 INFO  Task:90 - Task "Task1" created. Start date: [2032-11-22 12:18:26.202] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 11:54:59 INFO  Task:38 - Task "Task2" created. Start date: [1969-12-16 08:41:00.584]. Active: false
-2017-02-01 11:54:59 INFO  Task:90 - Task "Task3" created. Start date: [2017-01-18 11:25:06.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 11:54:59 INFO  Task:90 - Task "Task4" created. Start date: [2016-09-24 06:38:26.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 11:54:59 INFO  Task:90 - Task "Task5" created. Start date: [2017-03-05 06:31:46.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 11:54:59 INFO  Task:90 - Task "Task6" created. Start date: [2017-03-17 08:18:26.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 11:54:59 INFO  Task:72 - Task "Task7" created. Start date: [1970-01-01 02:02:00.000] End date: [1970-01-01 02:02:01.000]. Active: false
-2017-02-01 11:54:59 INFO  Task:72 - Task "Task8" created. Start date: [1969-12-16 08:41:00.584] End date: [1970-01-06 08:50:15.248]. Active: false
-2017-02-01 11:54:59 INFO  Task:128 - The "Task1" changed the status from: false to: true
-2017-02-01 11:54:59 INFO  Task:128 - The "Task2" changed the status from: false to: true
-2017-02-01 11:54:59 INFO  Task:128 - The "Task3" changed the status from: false to: true
-2017-02-01 11:54:59 INFO  Task:128 - The "Task8" changed the status from: false to: true
-2017-02-01 11:54:59 INFO  Task:128 - The "Task7" changed the status from: false to: true
-2017-02-01 11:54:59 INFO  Task:111 - The "Task1" changed for "TASKKK1"
-2017-02-01 11:54:59 INFO  Task:153 - The "TASKKK1" changed the start date from: [2032-11-22 12:18:26.202] to: [1970-01-12 03:46:40.000]. Not repeated
-2017-02-01 11:54:59 INFO  ArrayTaskList:57 - The "TASKKK1" add to ArrayList
-2017-02-01 11:54:59 INFO  ArrayTaskList:57 - The "Task2" add to ArrayList
-2017-02-01 11:54:59 INFO  ArrayTaskList:57 - The "Task3" add to ArrayList
-2017-02-01 11:54:59 INFO  ArrayTaskList:57 - The "Task4" add to ArrayList
-2017-02-01 11:54:59 INFO  Task:90 - Task "Task5" created. Start date: [2017-03-05 06:31:46.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 11:54:59 INFO  ArrayTaskList:57 - The "Task5" add to ArrayList
-2017-02-01 11:54:59 INFO  Task:90 - Task "Task4" created. Start date: [2016-09-24 06:38:26.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 11:54:59 INFO  ArrayTaskList:57 - The "Task4" add to ArrayList
-2017-02-01 11:54:59 INFO  Task:90 - Task "Task3" created. Start date: [2017-01-18 11:25:06.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 11:54:59 INFO  Task:128 - The "Task3" changed the status from: false to: true
-2017-02-01 11:54:59 INFO  ArrayTaskList:57 - The "Task3" add to ArrayList
-2017-02-01 11:54:59 INFO  Task:47 - Task "Task2" created. Start date: [1969-12-16 08:41:00.584]. Active: false
-2017-02-01 11:54:59 INFO  Task:128 - The "Task2" changed the status from: false to: true
-2017-02-01 11:54:59 INFO  ArrayTaskList:57 - The "Task2" add to ArrayList
-2017-02-01 11:54:59 INFO  Task:47 - Task "TASKKK1" created. Start date: [1970-01-12 03:46:40.000]. Active: false
-2017-02-01 11:54:59 INFO  Task:128 - The "TASKKK1" changed the status from: false to: true
-2017-02-01 11:54:59 INFO  ArrayTaskList:57 - The "TASKKK1" add to ArrayList
-2017-02-01 12:08:43 INFO  Task:90 - Task "Task1" created. Start date: [2032-11-22 12:18:26.202] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 12:08:43 INFO  Task:38 - Task "Task2" created. Start date: [1969-12-16 08:41:00.584]. Active: false
-2017-02-01 12:08:43 INFO  Task:90 - Task "Task3" created. Start date: [2017-01-18 11:25:06.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 12:08:43 INFO  Task:90 - Task "Task4" created. Start date: [2016-09-24 06:38:26.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 12:08:43 INFO  Task:90 - Task "Task5" created. Start date: [2017-03-05 06:31:46.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 12:08:43 INFO  Task:90 - Task "Task6" created. Start date: [2017-03-17 08:18:26.204] End date: [2032-11-22 12:18:26.204]. Active: false
-2017-02-01 12:08:43 INFO  Task:72 - Task "Task7" created. Start date: [1970-01-01 02:02:00.000] End date: [1970-01-01 02:02:01.000]. Active: false
-2017-02-01 12:08:43 INFO  Task:72 - Task "Task8" created. Start date: [1969-12-16 08:41:00.584] End date: [1970-01-06 08:50:15.248]. Active: false
-2017-02-01 12:08:43 INFO  Task:128 - The "Task1" changed the status from: false to: true
-2017-02-01 12:08:43 INFO  Task:128 - The "Task2" changed the status from: false to: true
-2017-02-01 12:08:43 INFO  Task:128 - The "Task3" changed the status from: false to: true
-2017-02-01 12:08:43 INFO  Task:128 - The "Task8" changed the status from: false to: true
-2017-02-01 12:08:43 INFO  Task:128 - The "Task7" changed the status from: false to: true
-2017-02-01 12:08:43 INFO  Task:111 - The "Task1" changed for "TASKKK1"
-2017-02-01 12:08:43 INFO  Task:153 - The "TASKKK1" changed the start date from: [2032-11-22 12:18:26.202] to: [1970-01-12 03:46:40.000]. Not repeated
-2017-02-01 12:08:43 INFO  ArrayTaskList:57 - The "TASKKK1" added to ArrayList
-2017-02-01 12:08:43 INFO  ArrayTaskList:57 - The "Task2" added to ArrayList
-2017-02-01 12:08:43 INFO  ArrayTaskList:57 - The "Task3" added to ArrayList
-2017-02-01 12:08:43 INFO  ArrayTaskList:57 - The "Task4" added to ArrayList
-2017-02-01 12:08:43 INFO  LinkedTaskList:65 - The "TASKKK1" added to LinkedList
-2017-02-01 12:08:43 INFO  LinkedTaskList:65 - The "Task2" added to LinkedList
-2017-02-01 12:08:43 INFO  LinkedTaskList:65 - The "Task3" added to LinkedList
-2017-02-01 12:08:43 INFO  LinkedTaskList:65 - The "Task4" added to LinkedList
-2017-02-01 12:08:43 INFO  LinkedTaskList:65 - The "TASKKK1" added to LinkedList
-2017-02-01 12:08:43 INFO  LinkedTaskList:65 - The "Task2" added to LinkedList
-2017-02-01 12:08:43 INFO  LinkedTaskList:65 - The "Task3" added to LinkedList
-2017-02-01 12:08:43 INFO  LinkedTaskList:65 - The "Task4" added to LinkedList
-2017-02-01 12:08:43 INFO  LinkedTaskList:65 - The "Task5" added to LinkedList
+2017-02-01 14:57:26 INFO  Task:90 - Task "Task1" created. Start date: [2032-11-22 12:18:26.202] End date: [2032-11-22 12:18:26.204]. Active: false
+2017-02-01 14:57:26 INFO  Task:38 - Task "Task2" created. Start date: [1969-12-16 08:41:00.584]. Active: false
+2017-02-01 14:57:26 INFO  Task:90 - Task "Task3" created. Start date: [2017-01-18 11:25:06.204] End date: [2032-11-22 12:18:26.204]. Active: false
+2017-02-01 14:57:26 INFO  Task:90 - Task "Task4" created. Start date: [2016-09-24 06:38:26.204] End date: [2032-11-22 12:18:26.204]. Active: false
+2017-02-01 14:57:26 INFO  Task:90 - Task "Task5" created. Start date: [2017-03-05 06:31:46.204] End date: [2032-11-22 12:18:26.204]. Active: false
+2017-02-01 14:57:26 INFO  Task:90 - Task "Task6" created. Start date: [2017-03-17 08:18:26.204] End date: [2032-11-22 12:18:26.204]. Active: false
+2017-02-01 14:57:26 INFO  Task:72 - Task "Task7" created. Start date: [1970-01-01 02:02:00.000] End date: [1970-01-01 02:02:01.000]. Active: false
+2017-02-01 14:57:26 INFO  Task:72 - Task "Task8" created. Start date: [1969-12-16 08:41:00.584] End date: [1970-01-06 08:50:15.248]. Active: false
+2017-02-01 14:57:26 INFO  Task:128 - The "Task1" changed the status from: false to: true
+2017-02-01 14:57:26 INFO  Task:128 - The "Task2" changed the status from: false to: true
+2017-02-01 14:57:26 INFO  Task:128 - The "Task3" changed the status from: false to: true
+2017-02-01 14:57:26 INFO  Task:128 - The "Task8" changed the status from: false to: true
+2017-02-01 14:57:26 INFO  Task:128 - The "Task7" changed the status from: false to: true
+2017-02-01 14:57:26 INFO  Task:111 - The "Task1" changed for "TASKKK1"
+2017-02-01 14:57:26 INFO  Task:153 - The "TASKKK1" changed the start date from: [2032-11-22 12:18:26.202] to: [1970-01-12 03:46:40.000]. Not repeated
+2017-02-01 14:57:26 INFO  ArrayTaskList:57 - The "TASKKK1" added to ArrayList
+2017-02-01 14:57:26 INFO  ArrayTaskList:57 - The "Task2" added to ArrayList
+2017-02-01 14:57:26 INFO  ArrayTaskList:57 - The "Task3" added to ArrayList
+2017-02-01 14:57:26 INFO  ArrayTaskList:57 - The "Task4" added to ArrayList
+2017-02-01 14:57:27 INFO  TaskIO:31 - Binary writing task SUCCESSFUL
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "TASKKK1" added to LinkedList
+2017-02-01 14:57:27 INFO  TaskIO:55 - Binary reading task SUCCESSFUL
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task2" added to LinkedList
+2017-02-01 14:57:27 INFO  TaskIO:55 - Binary reading task SUCCESSFUL
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task3" added to LinkedList
+2017-02-01 14:57:27 INFO  TaskIO:55 - Binary reading task SUCCESSFUL
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task4" added to LinkedList
+2017-02-01 14:57:27 INFO  TaskIO:55 - Binary reading task SUCCESSFUL
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "TASKKK1" added to LinkedList
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task2" added to LinkedList
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task3" added to LinkedList
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task4" added to LinkedList
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task5" added to LinkedList
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task6" added to LinkedList
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task7" added to LinkedList
+2017-02-01 14:57:27 INFO  LinkedTaskList:65 - The "Task8" added to LinkedList
+2017-02-01 14:57:27 INFO  TaskIO:109 - Text writing task SUCCESSFUL
+2017-02-01 14:57:27 INFO  Task:90 - Task "Task8" created. Start date: [1969-12-16 08:41:00.584] End date: [1970-01-06 08:50:15.248]. Active: false
+2017-02-01 14:57:27 INFO  Task:128 - The "Task8" changed the status from: false to: true
+2017-02-01 14:57:27 INFO  ArrayTaskList:57 - The "Task8" added to ArrayList
+2017-02-01 14:57:27 INFO  Task:90 - Task "Task7" created. Start date: [1970-01-01 02:02:00.000] End date: [1970-01-01 02:02:01.000]. Active: false
+2017-02-01 14:57:27 INFO  Task:128 - The "Task7" changed the status from: false to: true
+2017-02-01 14:57:27 INFO  ArrayTaskList:57 - The "Task7" added to ArrayList
+2017-02-01 14:57:27 INFO  Task:90 - Task "Task6" created. Start date: [2017-03-17 08:18:26.204] End date: [2032-11-22 12:18:26.204]. Active: false
+2017-02-01 14:57:27 INFO  ArrayTaskList:57 - The "Task6" added to ArrayList
+2017-02-01 14:57:27 INFO  Task:90 - Task "Task5" created. Start date: [2017-03-05 06:31:46.204] End date: [2032-11-22 12:18:26.204]. Active: false
+2017-02-01 14:57:27 INFO  ArrayTaskList:57 - The "Task5" added to ArrayList
+2017-02-01 14:57:27 INFO  Task:90 - Task "Task4" created. Start date: [2016-09-24 06:38:26.204] End date: [2032-11-22 12:18:26.204]. Active: false
+2017-02-01 14:57:27 INFO  ArrayTaskList:57 - The "Task4" added to ArrayList
+2017-02-01 14:57:27 INFO  Task:90 - Task "Task3" created. Start date: [2017-01-18 11:25:06.204] End date: [2032-11-22 12:18:26.204]. Active: false
+2017-02-01 14:57:27 INFO  Task:128 - The "Task3" changed the status from: false to: true
+2017-02-01 14:57:27 INFO  ArrayTaskList:57 - The "Task3" added to ArrayList
+2017-02-01 14:57:27 INFO  Task:47 - Task "Task2" created. Start date: [1969-12-16 08:41:00.584]. Active: false
+2017-02-01 14:57:27 INFO  Task:128 - The "Task2" changed the status from: false to: true
+2017-02-01 14:57:27 INFO  ArrayTaskList:57 - The "Task2" added to ArrayList
+2017-02-01 14:57:27 INFO  Task:47 - Task "TASKKK1" created. Start date: [1970-01-12 03:46:40.000]. Active: false
+2017-02-01 14:57:27 INFO  Task:128 - The "TASKKK1" changed the status from: false to: true
+2017-02-01 14:57:27 INFO  ArrayTaskList:57 - The "TASKKK1" added to ArrayList
+2017-02-01 14:57:27 INFO  TaskIO:128 - Text reading task SUCCESSFUL

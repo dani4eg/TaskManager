@@ -77,23 +77,23 @@ public class Main {
         list3.add(task3);
         list3.add(task4);
         list3.add(task5);
-//        list3.add(task6);
-//        list3.add(task7);
-//        list3.add(task8);
-//        ArrayTaskList list4 = new ArrayTaskList();
-//
-//        File tFile = new File("tFile.txt");
-//        TaskIO.writeText(list3, tFile);
-//        TaskIO.readText(list4,tFile);
-//
-//        System.out.println("LinkedList. Testing TEXT writing tasks in file");
-//        System.out.println(list3);
-//        System.out.println("ArrayList. Testing TEXT reading tasks from file in tasklist");
-//        System.out.println(list4);
-//
-//
-//        System.out.println(task1);
-//        System.out.println(task4);
+        list3.add(task6);
+        list3.add(task7);
+        list3.add(task8);
+        ArrayTaskList list4 = new ArrayTaskList();
+
+        File tFile = new File("tFile.txt");
+        TaskIO.writeText(list3, tFile);
+        TaskIO.readText(list4,tFile);
+
+        System.out.println("LinkedList. Testing TEXT writing tasks in file");
+        System.out.println(list3);
+        System.out.println("ArrayList. Testing TEXT reading tasks from file in tasklist");
+        System.out.println(list4);
+
+
+        System.out.println(task1);
+        System.out.println(task4);
 
 
 

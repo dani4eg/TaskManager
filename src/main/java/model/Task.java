@@ -220,6 +220,24 @@ public class Task implements Cloneable, Serializable {
         this.interval = interval;
     }
 
+    public void setTime(Date start, Date end, int interval) throws IllegalArgumentException {
+        if (interval <0) {
+            logger.error("The time or interval of \"" + this.title + "\" can not be negative");
+            throw new IllegalArgumentException ("The time or interval can not be negative");
+        }
+        else if (start.after(end)) {
+            logger.error("The end date of \"" + this.title + "\" must not be earlier than start date");
+            throw new IllegalArgumentException ("The end date must not be earlier than start date");
+        }
+        this.end = end;
+        logger.info("The \"" + this.title + "\" changed the start date from: " +
+                sdate.format(this.start) + " to: " +
+                sdate.format(start) + ". End date changed to: " +
+                sdate.format(this.end) + ". Repeated");
+        this.start = start;
+        this.interval = interval;
+    }
+
     /**
      * метод проверяет повторяется ли задача
      * @return true если interval>0

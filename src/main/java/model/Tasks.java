@@ -1,5 +1,8 @@
 package model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.*;
 
 /**
@@ -7,6 +10,7 @@ import java.util.*;
  */
 public class Tasks {
 
+    static Logger logger = LoggerFactory.getLogger(Tasks.class);
     /**
      * Метод возвращает список задач, которые будут выполнены в данном промежутке времени
      * Создаем новый лист
@@ -31,6 +35,7 @@ public class Tasks {
 
     public static SortedMap<Date, Set<Task>> calendar(Iterable<Task> tasks, Date start, Date end)  throws IllegalArgumentException{
         if(end.before(start)) {
+            logger.error("The end date must not be earlier than start date");
             throw new IllegalArgumentException();
         }
         SortedMap<Date, Set<Task>> map = new TreeMap<>();
@@ -49,6 +54,11 @@ public class Tasks {
                 map.put((Date) date.clone(), set);
                 date.setTime(date.getTime()+task.getRepeatInterval());
             }
+            for (Map.Entry<Date, Set<Task>> pair : map.entrySet()) {
+                System.out.println(pair.getKey());
+                System.out.println(pair.getValue());
+            }
+//            System.out.println(map);
         }
         return map;
     }

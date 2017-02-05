@@ -3,6 +3,7 @@ package model;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -11,6 +12,7 @@ import java.util.*;
 public class Tasks {
 
     static Logger logger = LoggerFactory.getLogger(Tasks.class);
+    static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH.mm.ss");
     /**
      * Метод возвращает список задач, которые будут выполнены в данном промежутке времени
      * Создаем новый лист
@@ -45,20 +47,35 @@ public class Tasks {
             Task task = (Task)iterator.next();
             Date date = start;
             while((date.before(end) || date.equals(end))) {
-                Set<Task> set = new HashSet<>();
-                date = task.nextTimeAfter(date);
-                if(map.containsKey(date)){
-                    set=map.get(date);
-                }
-                set.add(task);
-                map.put((Date) date.clone(), set);
-                date.setTime(date.getTime()+task.getRepeatInterval());
+//                if (date.equals(task.nextTimeAfter(date)) && date.getTime() != -1) {
+                    Set<Task> set = new HashSet<>();
+                    date = task.nextTimeAfter(date);
+                    if (map.containsKey(date)) {
+                        set = map.get(date);
+                    }
+                    set.add(task);
+                    map.put((Date) date.clone(), set);
+                    date.setTime(date.getTime() + task.getRepeatInterval());
+//                } else {
+//                    date = task.nextTimeAfter(date);
+//                    Set<Task> set = new HashSet<>();
+//                    if (map.containsKey(date)) {
+//                        set = map.get(date);
+//                    }
+//                    set.add(task);
+//                    map.put((Date) date.clone(), set);
+//                }
+
             }
-            for (Map.Entry<Date, Set<Task>> pair : map.entrySet()) {
-                System.out.println(pair.getKey());
-                System.out.println(pair.getValue());
-            }
+
 //            System.out.println(map);
+        }
+        for (Map.Entry<Date, Set<Task>> pair : map.entrySet()) {
+            System.out.println(sdf.format(pair.getKey()));
+            for (Task task : pair.getValue()) {
+                System.out.println(task.getTitle());
+            }
+
         }
         return map;
     }

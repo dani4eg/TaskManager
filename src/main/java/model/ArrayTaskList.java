@@ -65,6 +65,9 @@ public class ArrayTaskList extends TaskList implements Cloneable {
      * @return возвращает задачу
      */
     public Task getTask(int index) {
+//        if(index<0 || index>=size){
+//            throw new ArrayIndexOutOfBoundsException();
+//        }
         return tasks[index];
     }
 
@@ -81,10 +84,10 @@ public class ArrayTaskList extends TaskList implements Cloneable {
             logger.error("Deleted empty element in ArrayList");
             throw new NullPointerException ("Deleted empty element in ArrayList");
         }
-        for (int i = 0; i < tasks.length; i++) {
+        for (int i = 0; i < size; i++) {
             if (task.equals(tasks[i])) {
                 logger.info("The \"" + task.getTitle() + "\" deleted from ArrayList");
-                System.arraycopy(tasks, i+1, tasks, i, size-1);
+                System.arraycopy(tasks, i+1, tasks, i, size-1-i);
                 size--;
                 return true;
             }
@@ -177,7 +180,7 @@ public class ArrayTaskList extends TaskList implements Cloneable {
                 text += " every [" + reInterval(getTask(i).getInterval()) + "]";
             }
             else {
-                text += " at " + date.format(getTask(i).getStartTime());
+                text += " at " + date.format(getTask(i).getTime());
             }
             text +=  (getTask(i).isActive() ? " inactive" : "");
             if (i!=size-1) text+=";";

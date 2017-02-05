@@ -135,8 +135,8 @@ public class Task implements Cloneable, Serializable {
      * @return start если задача не повторяется - возвращает start - при том, что start = time (см конструктор)
      * @return start если задача повторяется, при этом start = start (см конструктор)
      */
-    public int getTime() {
-        return (int)this.start.getTime();
+    public Date getTime() {
+        return this.start;
     }
 
     /**
@@ -173,8 +173,8 @@ public class Task implements Cloneable, Serializable {
      * @return start если задача повторяется, при этом start = start (см конструктор)
      * @return start если задача не повторяется - возвращает start - при том, что start = time (см конструктор)
      */
-    public int getStartTime() {
-        return (int)this.start.getTime();
+    public Date getStartTime() {
+        return this.start;
     }
 
     /**
@@ -182,8 +182,8 @@ public class Task implements Cloneable, Serializable {
      * @return end если задача повторяется, при этом end = end (см конструктор)
      * @return end если задача не повторяется - возвращает end - при том, что end = time (см конструктор)
      */
-    public int getEndTime() {
-        return (int)this.end.getTime();
+    public Date getEndTime() {
+        return end;
     }
 
     /**

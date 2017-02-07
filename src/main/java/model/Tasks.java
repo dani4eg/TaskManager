@@ -70,13 +70,7 @@ public class Tasks {
 
 //            System.out.println(map);
         }
-        for (Map.Entry<Date, Set<Task>> pair : map.entrySet()) {
-            System.out.println(sdf.format(pair.getKey()));
-            for (Task task : pair.getValue()) {
-                System.out.println(task.getTitle());
-            }
 
-        }
         return map;
     }
 }

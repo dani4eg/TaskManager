@@ -13,11 +13,35 @@ public class Main {
     private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IllegalArgumentException, ParseException, IOException {
-        int t=0;
 
         TaskIO.read(list, new FileReader("tFile.txt"));
-        System.out.println(list);
-        System.out.println("-----------------" + list.getTask(2));
+
+        final Thread myThready = new Thread(new Runnable()
+        {
+            public void run() //Этот метод будет выполняться в побочном потоке
+            {
+                long d;
+                Date sdate = new Date();
+                Date edate = new Date(sdate.getTime() + (86400000));
+                Map<Date, Set<Task>> map = Tasks.calendar(list, sdate, edate);
+                for (Map.Entry<Date, Set<Task>> pair : map.entrySet()) {
+                    d = pair.getKey().getTime() - sdate.getTime();
+                    System.out.println("Sleep " + d/1000 + " sec");
+                    try {
+                        Thread.sleep(d);
+                        System.out.println("WAKE UP");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+        myThready.start();	//Запуск потока
+
+
+        int t = 0;
+
+        System.out.println(new Date());
         System.out.println("----------------The TaskManager v0.1 started---------------");
         System.out.println("Press 1: If u wanna see task list");
         System.out.println("Press 2: If u wanna see calendar of tasks");
@@ -26,29 +50,31 @@ public class Main {
         System.out.println("Press 5: If u wanna delete the task");
         System.out.println("Press 6: If u wanna have detail task information");
         System.out.println("Press 7: If u wanna exit the programm");
-            while (t!=7) {
-                System.out.println("---------------U are in Main menu. Press number---------------");
-                try {
-                    t = Integer.parseInt(reader.readLine());
-                    if (t == 1) {
-                        showList();
-                    } else if (t == 2) {
-                        calendar();
-                    } else if (t == 3) {
-                        add(list);
-                    } else if (t == 4) {
-                        change();
-                    } else if (t == 5) {
-                        delete();
-                    } else if (t == 6) {
-                        info();
-                    } else if (t==7) {
-                    } else System.out.println("Incorrect input");
-                } catch (IllegalArgumentException e) {
-                    System.out.println("Incorrect input");
-                }
+        while (t != 7) {
+            System.out.println("---------------U are in Main menu. Press number---------------");
+            try {
+                t = Integer.parseInt(reader.readLine());
+                if (t == 1) {
+                    showList();
+                    sort(list);
+                } else if (t == 2) {
+                    calendar();
+                } else if (t == 3) {
+                    add(list);
+                } else if (t == 4) {
+                    change();
+                } else if (t == 5) {
+                    delete();
+                } else if (t == 6) {
+                    info();
+                } else if (t == 7) {
+                } else System.out.println("Incorrect input");
+            } catch (IllegalArgumentException e) {
+                System.out.println("Incorrect input");
             }
         }
+    }
+
     private static void showList() {
         System.out.println("---------------Show list---------------");
         if (list.size() == 0) {
@@ -99,8 +125,7 @@ public class Main {
                     interval = Integer.parseInt(reader.readLine());
                     if (interval > 0) break;
                     else System.out.println("Interval must be >=0");
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     System.out.println("Incorrect input of interval");
                 }
             }
@@ -116,6 +141,7 @@ public class Main {
     }
 
     private static void calendar() throws IOException {
+        Map<Date, Set<Task>> map;
         System.out.println("---------------Calendar of tasks---------------");
         Date dstart;
         Date dend;
@@ -130,12 +156,17 @@ public class Main {
                         if (dstart.after(dend)) {
                             System.out.println("The end date must not be earlier than start date");
                         } else break;
-                    }
-                    catch (ParseException e) {
+                    } catch (ParseException e) {
                         System.out.println("Incorrect input of end date");
                     }
                 }
-                Tasks.calendar(list, dstart, dend);
+                map = Tasks.calendar(list, dstart, dend);
+                for (Map.Entry<Date, Set<Task>> pair : map.entrySet()) {
+                    System.out.println(sdf.format(pair.getKey()));
+                    for (Task task : pair.getValue()) {
+                        System.out.println(task.getTitle());
+                    }
+                }
                 break;
             } catch (ParseException e) {
                 System.out.println("Incorrect input of start date");
@@ -156,7 +187,7 @@ public class Main {
             sTitle = reader.readLine();
             for (int i = 0; i < list.size(); i++) {
                 if (sTitle.equals(list.getTask(i).getTitle())) {
-                    loopTitle=list.getTask(i).getTitle();
+                    loopTitle = list.getTask(i).getTitle();
                     System.out.println("What u wanna do?");
                     System.out.println("1 - Change title \n2 - Change time or interval \n3 - Change active\n4 - Exit program");
                     while (true) {
@@ -195,8 +226,7 @@ public class Main {
                                             interv = Integer.parseInt(reader.readLine());
                                             if (interv > 0) break;
                                             else System.out.println("Interval must be >=0");
-                                        }
-                                        catch (NumberFormatException e) {
+                                        } catch (NumberFormatException e) {
                                             System.out.println("Incorrect input of interval");
                                         }
                                     }
@@ -215,8 +245,7 @@ public class Main {
                             } else if (ch == 4) {
                                 System.out.println("Good bye");
                                 break;
-                            }
-                            else System.out.println("Incorrect input. Repeat please");
+                            } else System.out.println("Incorrect input. Repeat please");
                         } catch (NumberFormatException e) {
                             System.out.println("Incorrect input. Repeat please");
                         }
@@ -248,8 +277,8 @@ public class Main {
 
     private static void delete() throws IOException {
         System.out.println("---------------Delete the task---------------");
-        String sTitle="1";
-        String loopTitle="2";
+        String sTitle = "1";
+        String loopTitle = "2";
         System.out.println("Enter task title u want to delete");
         System.out.println(list.size());
         for (int i = 0; i < list.size(); i++) {
@@ -265,8 +294,7 @@ public class Main {
             }
             if (!sTitle.equals(loopTitle)) {
                 System.out.println("Task not found");
-            }
-            else {
+            } else {
                 TaskIO.writeText(list, new File("tFile.txt"));
                 System.out.println(loopTitle + " deleted");
                 break;
@@ -290,6 +318,19 @@ public class Main {
             }
         }
     }
+
+    private static void sort(TaskList list) {
+
+        Date min = list.getTask(0).getStartTime();
+        for (int i = 1; i < list.size(); i++) {
+           if (list.getTask(i).getStartTime().before(min)) {
+               min = list.getTask(i).getStartTime();
+           }
+        }
+        System.out.println(min);
+
+    }
+
  }
 
 

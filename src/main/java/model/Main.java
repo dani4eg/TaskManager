@@ -1,5 +1,8 @@
 package model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -11,6 +14,7 @@ public class Main {
     private static TaskList list = new ArrayTaskList();
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH.mm.ss");
     private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    static Logger logger = LoggerFactory.getLogger(Tasks.class);
 
     public static void main(String[] args) throws IllegalArgumentException, ParseException, IOException {
 
@@ -18,30 +22,33 @@ public class Main {
 
         final Thread myThready = new Thread(new Runnable()
         {
-            public void run() //Этот метод будет выполняться в побочном потоке
+            public void run()
             {
                 long d;
                 Date sdate = new Date();
-                Date edate = new Date(sdate.getTime() + (86400000));
+                Date edate = new Date(sdate.getTime() + (66400000));
                 Map<Date, Set<Task>> map = Tasks.calendar(list, sdate, edate);
                 for (Map.Entry<Date, Set<Task>> pair : map.entrySet()) {
-                    d = pair.getKey().getTime() - sdate.getTime();
-                    System.out.println("Sleep " + d/1000 + " sec");
+                    d = pair.getKey().getTime() - (sdate.getTime());
+                    sdate = pair.getKey();
+                    System.out.println("Near task done after " + d/1000 + " sec.");
                     try {
                         Thread.sleep(d);
-                        System.out.println("WAKE UP");
+                        System.out.println(sdf.format(pair.getKey()));
+                        for (Task task : pair.getValue()) {
+                            logger.info("The " + task.getTitle() + " is done.");
+                            System.out.println("DING DING.......The " + task.getTitle() + " is done.");
+                        }
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
             }
         });
-        myThready.start();	//Запуск потока
-
+        myThready.start();
 
         int t = 0;
-
-        System.out.println(new Date());
+        System.out.println("Current date  " + sdf.format(new Date()));
         System.out.println("----------------The TaskManager v0.1 started---------------");
         System.out.println("Press 1: If u wanna see task list");
         System.out.println("Press 2: If u wanna see calendar of tasks");
@@ -56,7 +63,6 @@ public class Main {
                 t = Integer.parseInt(reader.readLine());
                 if (t == 1) {
                     showList();
-                    sort(list);
                 } else if (t == 2) {
                     calendar();
                 } else if (t == 3) {
@@ -319,17 +325,7 @@ public class Main {
         }
     }
 
-    private static void sort(TaskList list) {
 
-        Date min = list.getTask(0).getStartTime();
-        for (int i = 1; i < list.size(); i++) {
-           if (list.getTask(i).getStartTime().before(min)) {
-               min = list.getTask(i).getStartTime();
-           }
-        }
-        System.out.println(min);
-
-    }
 
  }
 

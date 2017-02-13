@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * Created by darthMilash on 30.01.2017.
@@ -17,7 +18,7 @@ public class Task implements Cloneable, Serializable {
     private int interval;
     private boolean active;
     Date date = null;
-    SimpleDateFormat sdate = new SimpleDateFormat("[YYYY-MM-dd hh:mm:ss.SSS]");
+    SimpleDateFormat sdate = new SimpleDateFormat("[YYYY-MM-dd hh:mm:ss.SSS]", Locale.ENGLISH);
 
     Logger logger = LoggerFactory.getLogger(Task.class);
     /**
@@ -29,15 +30,12 @@ public class Task implements Cloneable, Serializable {
     public Task(String title, int time) throws IllegalArgumentException {
         if (time < 0 ) {
             logger.error("The time can not be negative");
-            throw new IllegalArgumentException ("The time can not be negative");
+            throw new IllegalArgumentException ();
         }
         this.title = title;
         date = new Date(time*1000);
         this.start = date;
         this.end = date;
-        logger.info("Task \"" + title + "\" created. Start date: " +
-                sdate.format(date) + ". Active: " + this.active);
-
     }
 
     public Task(String title, Date time) throws IllegalArgumentException {
@@ -59,29 +57,25 @@ public class Task implements Cloneable, Serializable {
         if (start < 0 || end <0 || interval <0)
         {
             logger.error("The time or interval of " + title + " can not be negative");
-            throw new IllegalArgumentException ("The time or interval can not be negative");
+            throw new IllegalArgumentException();
         }
         else if (start > end) {
             logger.error("The end date of " + title + " must not be earlier than start date");
-            throw new IllegalArgumentException ("The end date must not be earlier than start date");
+            throw new IllegalArgumentException();
         }
         this.title = title;
         this.start = new Date(start*1000);
         this.end = new Date(end*1000);
         this.interval = interval*1000;
-        logger.info("Task \"" + title + "\" created. Start date: " +
-                sdate.format(this.start) + " End date: " +
-                sdate.format(this.end) + ". Active: " + this.active);
-
     }
     public Task(String title, Date start, Date end, int interval) throws IllegalArgumentException {
         if (interval <0) {
             logger.error("The time or interval of " + this.title + " can not be negative");
-            throw new IllegalArgumentException ("The time or interval can not be negative");
+            throw new IllegalArgumentException();
         }
         else if (start.after(end)) {
             logger.error("The end date of " + this.title + " must not be earlier than start date");
-            throw new IllegalArgumentException ("The end date must not be earlier than start date");
+            throw new IllegalArgumentException();
         }
         this.title = title;
         this.start = start;
@@ -108,7 +102,7 @@ public class Task implements Cloneable, Serializable {
      * @param title название, которое надо поменять
      */
     public void setTitle(String title) {
-        logger.info("The \"" + this.title + "\" changed for \"" + title + "\"");
+        logger.info("The \"%b\" changed for \"%a\"", this.title, title);
         this.title = title;
     }
 
@@ -125,9 +119,7 @@ public class Task implements Cloneable, Serializable {
      * @param active true - если задача активна, falls - если не активна
      */
     public void setActive(boolean active) {
-        logger.info("The \"" + this.title + "\" changed the status from: " +
-                this.active + " to: " + active);
-        this.active = active;
+        logger.info("The \"%t\" changed the status from: %b to %a", this.title, this.active, active);
     }
 
     /**
@@ -147,12 +139,9 @@ public class Task implements Cloneable, Serializable {
     public void setTime(int time) throws IllegalArgumentException {
         if (time < 0) {
             logger.error("The time can not be negative");
-            throw new IllegalArgumentException ("The time can not be negative");
+            throw new IllegalArgumentException();
         }
         date = new Date(time*1000);
-        logger.info("The \"" + this.title + "\" changed the start date from: " +
-                sdate.format(this.start) + " to: " +
-                sdate.format(date) + ". Not repeated");
         this.start = date;
         this.end = date;
         this.interval = 0;
@@ -204,11 +193,11 @@ public class Task implements Cloneable, Serializable {
     public void setTime(int start, int end, int interval) throws IllegalArgumentException {
         if (interval <0) {
             logger.error("The time or interval of \"" + this.title + "\" can not be negative");
-            throw new IllegalArgumentException ("The time or interval can not be negative");
+            throw new IllegalArgumentException();
         }
         else if (start > end) {
             logger.error("The end date of \"" + this.title + "\" must not be earlier than start date");
-            throw new IllegalArgumentException ("The end date must not be earlier than start date");
+            throw new IllegalArgumentException();
         }
         date = new Date(start*1000);
         this.end = new Date(end*1000);
@@ -259,28 +248,28 @@ public class Task implements Cloneable, Serializable {
     public Date nextTimeAfter(Date current) throws IllegalArgumentException {
         Date date = new Date(-1);
         if (isActive()) {
-            if (!isRepeated()) {
-                if (this.start.after(current))
-                    return this.start;
-                else
-                    return new Date(-1);
-            } else {
+            if (isRepeated()) {
                 for (long i = this.start.getTime(); i <= this.end.getTime(); i = i + this.interval) {
                     date.setTime(i);
                     if (date.after(current) || date.equals(current)) {
                         return date;
                     } else date.setTime(-1);
                 }
+            } else {
+                if (this.start.after(current))
+                    return this.start;
+                else
+                    return new Date(-1);
             }
         }
         return date;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Task)) return false;
-        Task task = (Task) o;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (!(object instanceof Task)) return false;
+        Task task = (Task) object;
         if (interval != task.interval) return false;
         if (isActive() != task.isActive()) return false;
         if (!getTitle().equals(task.getTitle())) return false;

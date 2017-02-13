@@ -8,6 +8,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -31,7 +32,6 @@ public class TaskIO {
             logger.info("Binary writing task SUCCESSFUL");
         } catch (IOException e) {
             logger.error("Binary writing task in stream ERROR");
-            e.printStackTrace();
         }
     }
 
@@ -42,21 +42,19 @@ public class TaskIO {
      */
     public static void read(TaskList tasks, InputStream in) {
         try (ObjectInputStream in2 = new ObjectInputStream(in)) {
-            int n = in2.readInt();
-            for (int i=0; i<n; i++) {
+            int num = in2.readInt();
+            for (int i=0; i<num; i++) {
                 Task task = null;
                 try {
                     task = (Task) in2.readObject();
                 } catch (ClassNotFoundException e) {
                     logger.error("Class not found");
-                    e.printStackTrace();
                 }
                 tasks.add(task);
                 logger.info("Binary reading task SUCCESSFUL");
             }
         } catch (IOException e) {
             logger.error("Binary reading task from stream ERROR");
-            e.printStackTrace();
         }
     }
 
@@ -70,7 +68,6 @@ public class TaskIO {
             write(tasks, out2);
         } catch (IOException e) {
             logger.error("Binary writing task in file ERROR");
-            e.printStackTrace();
         }
     }
 
@@ -84,7 +81,6 @@ public class TaskIO {
             read(tasks, in2);
         } catch (IOException e) {
             logger.error("Binary reading task from file ERROR");
-            e.printStackTrace();
         }
     }
 
@@ -109,7 +105,6 @@ public class TaskIO {
             logger.info("Text writing task SUCCESSFUL");
         } catch (IOException e) {
             logger.error("Text writing task in stream ERROR");
-            e.printStackTrace();
         }
     }
 
@@ -128,7 +123,6 @@ public class TaskIO {
             logger.info("Text reading task SUCCESSFUL");
         }catch(IOException e){
             logger.error("Text reading task from stream ERROR");
-            e.printStackTrace();
         }
 
     }
@@ -143,7 +137,6 @@ public class TaskIO {
             write(tasks, writer);
         } catch (IOException e) {
             logger.error("Text writing task in file ERROR");
-            e.printStackTrace();
         }
     }
 
@@ -158,7 +151,6 @@ public class TaskIO {
             read(tasks, reader);
         }catch(IOException e){
             logger.error("Text reading task from file ERROR");
-            e.printStackTrace();
         }
     }
 
@@ -170,7 +162,7 @@ public class TaskIO {
         Date dTime = null;
         int interval=0;
         boolean active = false;
-        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS");
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS", Locale.ENGLISH);
 
         /**
          * Title
@@ -222,32 +214,32 @@ public class TaskIO {
         String minutes = "";
         String seconds = "";
         Pattern pat = Pattern.compile("every.+day");
-        Matcher m = pat.matcher(str);
-        if (m.find()) {
-            days = str.substring(m.start()+7, m.end()-4);
+        Matcher matcher = pat.matcher(str);
+        if (matcher.find()) {
+            days = str.substring(matcher.start()+7, matcher.end()-4);
             interval=Integer.parseInt(days) * 86400;
         }
         Pattern pat2 = Pattern.compile("hour");
-        Matcher m2 = pat2.matcher(str);
-        if (m2.find()) {
-            hours = str.substring(m2.start()-3, m2.end()-5);
+        Matcher matcher2 = pat2.matcher(str);
+        if (matcher2.find()) {
+            hours = str.substring(matcher2.start()-3, matcher2.end()-5);
             try {
                 interval+= Integer.parseInt(hours) * 3600;
             }
             catch (NumberFormatException e) {
-                String cHours = str.substring(m2.start()-2, m2.end()-5);
+                String cHours = str.substring(matcher2.start()-2, matcher2.end()-5);
                 interval+= Integer.parseInt(cHours) * 3600;
             }
         }
         Pattern pat3 = Pattern.compile("minute");
-        Matcher m3 = pat3.matcher(str);
-        if (m3.find()) {
-            minutes = str.substring(m3.start()-3, m3.end()-7);
+        Matcher matcher3 = pat3.matcher(str);
+        if (matcher3.find()) {
+            minutes = str.substring(matcher3.start()-3, matcher3.end()-7);
             try {
                 interval+= Integer.parseInt(minutes) * 60;
             }
             catch (NumberFormatException e) {
-                String cMinutes = str.substring(m3.start()-2, m3.end()-7);
+                String cMinutes = str.substring(matcher3.start()-2, matcher3.end()-7);
                 interval+= Integer.parseInt(cMinutes) * 60;
             }
         }
@@ -276,10 +268,10 @@ public class TaskIO {
         /**
          * Create task
          */
-        if (dStart!=null && dEnd!=null) {
-            task = new Task(title, dStart, dEnd, interval);
+        if (dStart==null && dEnd==null) {
+            task = new Task(title, dTime);
         }
-        else task = new Task(title, dTime);
+        else task = new Task(title, dStart, dEnd, interval);
         if (active) {
             task.setActive(true);
         }

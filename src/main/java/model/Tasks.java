@@ -12,7 +12,7 @@ import java.util.*;
 public class Tasks {
 
     static Logger logger = LoggerFactory.getLogger(Tasks.class);
-    static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH.mm.ss");
+    static SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy HH.mm.ss", Locale.ENGLISH);
     /**
      * Метод возвращает список задач, которые будут выполнены в данном промежутке времени
      * Создаем новый лист

@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import java.text.SimpleDateFormat;
 import java.util.Iterator;
+import java.util.Locale;
 import java.util.NoSuchElementException;
 import java.util.Arrays;
 
@@ -45,10 +46,6 @@ public class ArrayTaskList extends TaskList implements Cloneable {
      */
     public void add(Task task) throws NullPointerException
     {
-        if (task == null ) {
-            logger.error("Added empty element in ArrayList");
-            throw new NullPointerException ("Added empty element in ArrayList");
-        }
         if (size >= tasks.length) {
             Task[] tArr = new Task[(size*3)/2 +1];
             System.arraycopy(tasks, 0, tArr, 0, size);
@@ -80,10 +77,6 @@ public class ArrayTaskList extends TaskList implements Cloneable {
      */
     public boolean remove (Task task) throws NullPointerException
     {
-        if (task == null ) {
-            logger.error("Deleted empty element in ArrayList");
-            throw new NullPointerException ("Deleted empty element in ArrayList");
-        }
         for (int i = 0; i < size; i++) {
             if (task.equals(tasks[i])) {
                 logger.info("The \"" + task.getTitle() + "\" deleted from ArrayList");
@@ -145,7 +138,7 @@ public class ArrayTaskList extends TaskList implements Cloneable {
                 }
                 else {
                     for (int i = count-1; i < size -1 ; i++) {
-                        tasks[i] = tasks[i+1];
+                        System.arraycopy(tasks, i+1, tasks, i, size-1-i);
                     }
                     count--;
                     size--;
@@ -155,12 +148,11 @@ public class ArrayTaskList extends TaskList implements Cloneable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ArrayTaskList that = (ArrayTaskList) o;
-        if (!Arrays.equals(tasks, that.tasks)) return false;
-        return true;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        ArrayTaskList that = (ArrayTaskList) object;
+        return Arrays.equals(tasks, that.tasks);
     }
 
     @Override
@@ -171,7 +163,7 @@ public class ArrayTaskList extends TaskList implements Cloneable {
     @Override
     public String toString() {
         String text = "";
-        SimpleDateFormat date = new SimpleDateFormat("[YYYY-MM-dd hh:mm:ss.SSS]");
+        SimpleDateFormat date = new SimpleDateFormat("[YYYY-MM-dd hh:mm:ss.SSS]", Locale.ENGLISH);
         for (int i = 0; i < size; i++) {
             text += "\"" + getTask(i).getTitle() + "\"";
             if (getTask(i).isRepeated()) {
@@ -183,23 +175,22 @@ public class ArrayTaskList extends TaskList implements Cloneable {
                 text += " at " + date.format(getTask(i).getTime());
             }
             text +=  (getTask(i).isActive() ? " inactive" : "");
-            if (i!=size-1) text+=";";
-            else text+=".";
+            if (i==size-1) text+=".";
+            else text+=";";
             text += "\n";
         }
         return text;
     }
 
     public ArrayTaskList clone() {
+        ArrayTaskList arrayTaskList = null;
         try {
-
-            ArrayTaskList v = (ArrayTaskList) super.clone();
-            v.tasks  = Arrays.copyOf(tasks, tasks.length);
-            return v;
+            arrayTaskList = (ArrayTaskList) super.clone();
+            arrayTaskList.tasks  = Arrays.copyOf(tasks, tasks.length);
         } catch (CloneNotSupportedException e) {
-            // this shouldn't happen, since we are Cloneable
-            throw new InternalError();
+            logger.error("CloneNotSupportedException");
         }
+        return arrayTaskList;
     }
 
 

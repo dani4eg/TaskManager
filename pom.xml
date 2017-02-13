@@ -7,25 +7,56 @@
     <groupId>TaskManager</groupId>
     <artifactId>TaskManager</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <mvn.plugin.compiler>3.5.1</mvn.plugin.compiler>
+        <java.version>1.8</java.version>
+        <pmd.version>3.7</pmd.version>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${mvn.plugin.compiler}</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
+            </plugin>
+            <!-- Activate PMD for java code checking -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>${pmd.version}</version>
+                <configuration>
+                    <rulesets>
+                        <ruleset>java-code-rules.xml</ruleset>
+                    </rulesets>
+                    <targetJdk>${java.version}</targetJdk>
+                    <includeTests>true</includeTests>
+                    <outputEncoding>UTF-8</outputEncoding>
+                    <verbose>true</verbose>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
 
     <dependencies>
-    <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>1.7.22</version>
-    </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.22</version>
+        </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -34,8 +65,6 @@
         </dependency>
 
     </dependencies>
-
-
 
 
 </project>

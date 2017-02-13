@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import java.text.SimpleDateFormat;
 import java.util.Iterator;
+import java.util.Locale;
 import java.util.NoSuchElementException;
 
 /**
@@ -25,7 +26,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
      */
 
     public static class Link {
-        private Task task;
+        final private Task task;
         private Link next;
 
         public Task getTask() {
@@ -54,10 +55,6 @@ public class LinkedTaskList extends TaskList implements Cloneable{
      */
     @Override
     public void add(Task task) throws NullPointerException {
-        if (task == null ) {
-            logger.error("Added empty element in LinkedList");
-            throw new NullPointerException ("Added empty element in LinkedList");
-        }
         Link newLink = new Link(task);
         newLink.next = first;
         first = newLink;
@@ -75,7 +72,6 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     public Task getTask(int index) throws NullPointerException {
         if (index>=size()) {
             logger.error("The element not found");
-            throw new NullPointerException("The element not found");
         }
         Link current = first;
         for (int i = 0; i < index; i++) {
@@ -96,7 +92,6 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     public boolean remove (Task task)throws NullPointerException {
         if (task == null ) {
             logger.error("Deleted empty element in LinkedList");
-            throw new NullPointerException ("Deleted empty element in LinkedList");
         }
         Link current = first;
         Link prev = first;
@@ -110,7 +105,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
                 current = current.getNext();
             }
         }
-        if (current==first) {
+        if (current.equals(first)) {
             first = first.getNext();
         }
         else prev.setNext(current.getNext());
@@ -194,17 +189,17 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof LinkedTaskList)) return false;
-        LinkedTaskList that = (LinkedTaskList) o;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (!(object instanceof LinkedTaskList)) return false;
+        LinkedTaskList that = (LinkedTaskList) object;
         if (this.size() == that.size()) {
             Iterator list1 = this.iterator();
             Iterator list2 = that.iterator();
             while (list1.hasNext()) {
-                Object o1 = list1.next();
-                Object o2 = list2.next();
-                if (!(o1 == null ? o2==null : o1.equals(o2))) {
+                Object object1 = list1.next();
+                Object object2 = list2.next();
+                if (!(object1 == null ? object2==null : object1.equals(object2))) {
                     return false;
                 }
             }
@@ -226,7 +221,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     @Override
     public String toString() {
         String text = "";
-        SimpleDateFormat date = new SimpleDateFormat("[YYYY-MM-dd hh:mm:ss.SSS]");
+        SimpleDateFormat date = new SimpleDateFormat("[YYYY-MM-dd hh:mm:ss.SSS]", Locale.ENGLISH);
         for (int i = 0; i < size; i++) {
             text += "\"" + getTask(i).getTitle() + "\"";
             if (getTask(i).isRepeated()) {
@@ -238,8 +233,8 @@ public class LinkedTaskList extends TaskList implements Cloneable{
                 text += " at " + date.format(getTask(i).getStartTime());
             }
             text +=  (getTask(i).isActive() ? " inactive" : "");
-            if (i!=size-1) text+=";";
-            else text+=".";
+            if (i==size-1) text+=".";
+            else text+=";";
             text += "\n";
         }
         return text;
@@ -250,9 +245,8 @@ public class LinkedTaskList extends TaskList implements Cloneable{
         LinkedTaskList clone = null;
         try {
             clone = (LinkedTaskList) super.clone();
-        }
-        catch (CloneNotSupportedException e) {
-            throw new InternalError();
+        } catch (CloneNotSupportedException e) {
+            logger.error("CloneNotSupportedException");
         }
         return clone;
     }

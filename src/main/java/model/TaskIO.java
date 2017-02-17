@@ -5,12 +5,8 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Iterator;
-import java.util.Locale;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 /**
  * Created by darthMilash on 30.01.2017.
@@ -91,11 +87,11 @@ public class TaskIO {
      */
     public static void write(TaskList tasks, Writer out){
         try (BufferedWriter writer = new BufferedWriter(out)) {
-            Iterator it=tasks.iterator();
-            while(it.hasNext()) {
-                Task task = (Task) it.next();
+            Iterator iterator=tasks.iterator();
+            while(iterator.hasNext()) {
+                Task task = (Task) iterator.next();
                 writer.write(task.toString());
-                if (it.hasNext()) {
+                if (iterator.hasNext()) {
                     writer.write(";");
                 }
                 else
@@ -118,7 +114,7 @@ public class TaskIO {
         try(BufferedReader reader = new BufferedReader(in)) {
             String str;
             while((str=reader.readLine())!=null){
-                tasks.add(Interval.splitString(str));
+                tasks.add(Spliter.splitString(str));
             }
             logger.info("Text reading task SUCCESSFUL");
         }catch(IOException e){

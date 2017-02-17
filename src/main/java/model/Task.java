@@ -295,7 +295,7 @@ public class Task implements Cloneable, Serializable {
         if (isRepeated()) {
             text += " from " + sdate.format(this.start);
             text += " to " + sdate.format(this.end);
-            text += " every [" + reInterval(interval) + "]";
+            text += " every [" + Interval.reInterval(interval) + "]";
         }
         else {
             text += " at " + sdate.format(this.start);
@@ -314,35 +314,9 @@ public class Task implements Cloneable, Serializable {
         return task;
     }
 
-    public String reInterval(int interval) {
-        int days = interval / 1000 / 86400;
-        int hours = interval / 1000 / 3600 % 24;
-        int minutes = interval / 1000 / 60 % 60;
-        int seconds = interval / 1000 % 60;
+    public String reInterval(int i) {
         String txt="";
-        if (days>=1) {
-            txt+= days;
-            if (days>1) txt+= " days";
-            else txt+= " day";
-        }
-        if (hours>=1) {
-            if (txt.equals("")) txt+= hours;
-            else  txt+= " " + hours;
-            if (hours>1) txt+= " hours";
-            else txt+= " hour";
-        }
-        if (minutes>=1) {
-            if (txt.equals("")) txt+= minutes;
-            else  txt+= " " + minutes;
-            if (minutes>1) txt+= " minutes";
-            else txt+= " minute";
-        }
-        if (seconds>=1) {
-            if (txt.equals("")) txt+= seconds;
-            else  txt+= " " + seconds;
-            if (seconds>1) txt+= " seconds";
-            else txt+= " second";
-        }
+        txt = Interval.reInterval(i);
         return txt;
     }
 }

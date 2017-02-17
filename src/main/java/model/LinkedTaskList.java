@@ -227,7 +227,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
             if (getTask(i).isRepeated()) {
                 text += " from " + date.format(getTask(i).getStartTime());
                 text += " to " + date.format(getTask(i).getEndTime());
-                text += " every [" + reInterval(getTask(i).getInterval()) + "]";
+                text += " every [" + Interval.reInterval(getTask(i).getInterval()) + "]";
             }
             else {
                 text += " at " + date.format(getTask(i).getStartTime());

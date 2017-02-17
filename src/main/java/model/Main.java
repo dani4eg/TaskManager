@@ -2,7 +2,6 @@ package model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -17,6 +16,7 @@ public class Main {
     static Logger logger = LoggerFactory.getLogger(Tasks.class);
 
     public static void main(String[] args) throws IllegalArgumentException, ParseException, IOException {
+
 
         TaskIO.read(list, new FileReader("tFile.txt"));
 

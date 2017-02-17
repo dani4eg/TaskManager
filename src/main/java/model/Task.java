@@ -102,7 +102,7 @@ public class Task implements Cloneable, Serializable {
      * @param title название, которое надо поменять
      */
     public void setTitle(String title) {
-        logger.info("The \"%b\" changed for \"%a\"", this.title, title);
+        logger.info("The \"" + this.title + "\" changed for \"" + title + "\"");
         this.title = title;
     }
 
@@ -119,7 +119,8 @@ public class Task implements Cloneable, Serializable {
      * @param active true - если задача активна, falls - если не активна
      */
     public void setActive(boolean active) {
-        logger.info("The \"%t\" changed the status from: %b to %a", this.title, this.active, active);
+        logger.info("The \"" + this.title + "\" changed the status from: " + this.active + " to " + active);
+        this.active = active;
     }
 
     /**

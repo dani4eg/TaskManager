@@ -313,9 +313,9 @@
     <rule ref="rulesets/java/naming.xml/ClassNamingConventions">
         <priority>3</priority>
     </rule>
-    <rule ref="rulesets/java/naming.xml/AbstractNaming">
-        <priority>5</priority>
-    </rule>
+    <!--<rule ref="rulesets/java/naming.xml/AbstractNaming">-->
+        <!--<priority>5</priority>-->
+    <!--</rule>-->
     <rule ref="rulesets/java/naming.xml/AvoidDollarSigns">
         <priority>5</priority>
     </rule>
@@ -334,9 +334,9 @@
     <rule ref="rulesets/java/naming.xml/AvoidFieldNameMatchingTypeName">
         <priority>5</priority>
     </rule>
-    <rule ref="rulesets/java/naming.xml/AvoidFieldNameMatchingMethodName">
-        <priority>5</priority>
-    </rule>
+    <!--<rule ref="rulesets/java/naming.xml/AvoidFieldNameMatchingMethodName">-->
+        <!--<priority>5</priority>-->
+    <!--</rule>-->
     <rule ref="rulesets/java/naming.xml/NoPackage">
         <priority>3</priority>
     </rule>

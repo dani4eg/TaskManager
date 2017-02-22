@@ -28,7 +28,7 @@ public  class Spliter {
         interval = reInterval(str);
         active = reActive(str);
 
-        if (dStart==null && dEnd==null) {
+        if (dStart == null) {
             task = new Task(title, dTime);
         }
         else task = new Task(title, dStart, dEnd, interval);
@@ -49,8 +49,8 @@ public  class Spliter {
     }
 
     private static Date reStart(String str) throws ParseException {
-        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS", Locale.ENGLISH);
-        Date dStart = new Date();
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.ENGLISH);
+        Date dStart = null;
         String start;
         Pattern patStart = Pattern.compile("from.+to");
         Matcher mStart = patStart.matcher(str);
@@ -62,8 +62,8 @@ public  class Spliter {
     }
 
     private static Date reEnd(String str) throws ParseException {
-        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS", Locale.ENGLISH);
-        Date dEnd = new Date();
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.ENGLISH);
+        Date dEnd = null;
         String end = "";
         Pattern patEnd = Pattern.compile("to.+every");
         Matcher mEnd = patEnd.matcher(str);
@@ -75,8 +75,8 @@ public  class Spliter {
     }
 
     private static Date reTime(String str) throws ParseException {
-        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd kk:mm:ss.SSS", Locale.ENGLISH);
-        Date dTime = new Date();
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.ENGLISH);
+        Date dTime = null;
         String time = "";
         Pattern patTime = Pattern.compile("at.+]");
         Matcher mTime = patTime.matcher(str);

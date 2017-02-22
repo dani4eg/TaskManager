@@ -18,7 +18,7 @@ public class Task implements Cloneable, Serializable {
     private int interval;
     private boolean active;
     Date date = null;
-    SimpleDateFormat sdate = new SimpleDateFormat("[YYYY-MM-dd hh:mm:ss.SSS]", Locale.ENGLISH);
+    SimpleDateFormat sdate = new SimpleDateFormat("[YYYY-MM-dd HH:mm:ss.SSS]", Locale.ENGLISH);
 
     Logger logger = LoggerFactory.getLogger(Task.class);
     /**

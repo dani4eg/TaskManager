@@ -32,6 +32,7 @@ public class Tasks {
                 list.add(task);
             }
         }
+        logger.info("Add in calendar list succes");
         return list;
     }
 
@@ -48,6 +49,10 @@ public class Tasks {
             Date date = start;
             while((date.before(end) || date.equals(end))) {
 //                if (date.equals(task.nextTimeAfter(date)) && date.getTime() != -1) {
+                if (task.nextTimeAfter(date).getTime() == -1) {
+                    break;
+                }
+                else {
                     Set<Task> set = new HashSet<>();
                     date = task.nextTimeAfter(date);
                     if (map.containsKey(date)) {
@@ -55,8 +60,10 @@ public class Tasks {
                     }
                     set.add(task);
                     map.put((Date) date.clone(), set);
+
                     date.setTime(date.getTime() + task.getRepeatInterval());
-//                } else {
+                }
+////                } else {
 //                    date = task.nextTimeAfter(date);
 //                    Set<Task> set = new HashSet<>();
 //                    if (map.containsKey(date)) {
@@ -68,9 +75,9 @@ public class Tasks {
 
             }
 
+
 //            System.out.println(map);
         }
-
         return map;
     }
 }

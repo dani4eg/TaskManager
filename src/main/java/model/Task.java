@@ -42,7 +42,7 @@ public class Task implements Cloneable, Serializable {
         this.title = title;
         this.start = time;
         this.end = time;
-        logger.info("Task \"" + title + "\" created. Start date: " +
+        logger.info("Task \"" + this.title + "\" created. Start date: " +
                 sdate.format(time) + ". Active: " + this.active);
     }
 
@@ -102,7 +102,7 @@ public class Task implements Cloneable, Serializable {
      * @param title название, которое надо поменять
      */
     public void setTitle(String title) {
-        logger.info("The \"" + this.title + "\" changed for \"" + title + "\"");
+        logger.info("\"" + this.title + "\" changed for \"" + title + "\"");
         this.title = title;
     }
 
@@ -119,7 +119,7 @@ public class Task implements Cloneable, Serializable {
      * @param active true - если задача активна, falls - если не активна
      */
     public void setActive(boolean active) {
-        logger.info("The \"" + this.title + "\" changed the status from: " + this.active + " to " + active);
+        logger.info("\"" + this.title + "\" changed the status from: " + this.active + " to " + active);
         this.active = active;
     }
 
@@ -150,7 +150,7 @@ public class Task implements Cloneable, Serializable {
     }
 
     public void setTime(Date time) throws IllegalArgumentException {
-        logger.info("The \"" + this.title + "\" changed the start date from: " +
+        logger.info("\"" + this.title + "\" changed the start date from: " +
                 sdate.format(this.start) + " to: " +
                 sdate.format(time) + ". Not repeated");
         this.start = time;
@@ -202,7 +202,7 @@ public class Task implements Cloneable, Serializable {
         }
         date = new Date(start*1000);
         this.end = new Date(end*1000);
-        logger.info("The \"" + this.title + "\" changed the start date from: " +
+        logger.info("\"" + this.title + "\" changed the start date from: " +
                 sdate.format(this.start) + " to: " +
                 sdate.format(date) + ". End date changed to: " +
                 sdate.format(this.end) + ". Repeated");
@@ -220,7 +220,7 @@ public class Task implements Cloneable, Serializable {
             throw new IllegalArgumentException ("The end date must not be earlier than start date");
         }
         this.end = end;
-        logger.info("The \"" + this.title + "\" changed the start date from: " +
+        logger.info("\"" + this.title + "\" changed the start date from: " +
                 sdate.format(this.start) + " to: " +
                 sdate.format(start) + ". End date changed to: " +
                 sdate.format(this.end) + ". Repeated");
@@ -314,9 +314,9 @@ public class Task implements Cloneable, Serializable {
         return task;
     }
 
-    public String reInterval(int i) {
+    public String reInterval(int interval) {
         String txt="";
-        txt = Interval.reInterval(i);
+        txt = Interval.reInterval(interval);
         return txt;
     }
 }

@@ -15,11 +15,11 @@ public  class Spliter {
     public static Task splitString(String str) throws ParseException {
         Task task;
         String title;
-        Date dStart = null;
-        Date dEnd = null;
-        Date dTime = null;
+        Date dStart;
+        Date dEnd;
+        Date dTime;
         int interval;
-        boolean active = false;
+        boolean active;
 
         title = reTitle(str);
         dStart = reStart(str);

@@ -1,0 +1,146 @@
+2017-03-19 22:17:56 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-19 22:17:56 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-19 22:17:56 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:17:56 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-19 22:17:56 INFO  Task:129 - "21312312312" changed the status from: false to true
+2017-03-19 22:17:56 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:17:56 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-19 22:17:56 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-19 22:17:56 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-19 22:17:56 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-19 22:17:56 INFO  Task:129 - "erewrwerew" changed the status from: false to true
+2017-03-19 22:17:56 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-19 22:17:56 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-19 22:18:05 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-19 22:18:05 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-19 22:18:05 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:18:05 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-19 22:18:05 INFO  Task:129 - "21312312312" changed the status from: false to true
+2017-03-19 22:18:05 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:18:05 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-19 22:18:05 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-19 22:18:05 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-19 22:18:05 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-19 22:18:05 INFO  Task:129 - "erewrwerew" changed the status from: false to true
+2017-03-19 22:18:05 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-19 22:18:05 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-19 22:18:05 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:18:05 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:18:05 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-19 22:18:05 INFO  Tasks:33 - Add in calendar list succes
+2017-03-19 22:18:36 INFO  Task:112 - "erewrwerew" changed for "erewrwerew"
+2017-03-19 22:18:36 INFO  Task:129 - "erewrwerew" changed the status from: true to true
+2017-03-19 22:18:36 INFO  Task:112 - "erewrwerew" changed for "erewrwerew"
+2017-03-19 22:18:36 INFO  Task:129 - "erewrwerew" changed the status from: true to true
+2017-03-19 22:18:36 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-19 22:18:36 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:18:36 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:18:36 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-19 22:18:36 INFO  Tasks:33 - Add in calendar list succes
+2017-03-19 22:19:00 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-19 22:19:00 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-19 22:19:00 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:19:00 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-19 22:19:00 INFO  Task:129 - "21312312312" changed the status from: false to true
+2017-03-19 22:19:00 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:19:00 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-19 22:19:00 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-19 22:19:00 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-19 22:19:00 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-19 22:19:00 INFO  Task:129 - "erewrwerew" changed the status from: false to true
+2017-03-19 22:19:00 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-19 22:19:00 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-19 22:19:00 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:19:00 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:19:00 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-19 22:19:00 INFO  Tasks:33 - Add in calendar list succes
+2017-03-19 22:19:01 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:19:01 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:19:01 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-19 22:19:02 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:10:52 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-20 15:10:52 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-20 15:10:52 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:10:52 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-20 15:10:52 INFO  Task:129 - "21312312312" changed the status from: false to true
+2017-03-20 15:10:52 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:10:52 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-20 15:10:52 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-20 15:10:52 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-20 15:10:52 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-20 15:10:52 INFO  Task:129 - "erewrwerew" changed the status from: false to true
+2017-03-20 15:10:52 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:10:52 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-20 15:11:07 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-20 15:11:07 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-20 15:11:07 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:11:07 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-20 15:11:07 INFO  Task:129 - "21312312312" changed the status from: false to true
+2017-03-20 15:11:07 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:11:07 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-20 15:11:07 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-20 15:11:07 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-20 15:11:07 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-20 15:11:07 INFO  Task:129 - "erewrwerew" changed the status from: false to true
+2017-03-20 15:11:07 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:11:07 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-20 15:11:07 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:11:07 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:11:07 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:11:07 INFO  Tasks:33 - Add in calendar list succes
+2017-03-20 15:34:18 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-20 15:34:18 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-20 15:34:18 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:34:18 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-20 15:34:18 INFO  Task:129 - "21312312312" changed the status from: false to true
+2017-03-20 15:34:18 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:34:18 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-20 15:34:18 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-20 15:34:18 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-20 15:34:18 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-20 15:34:18 INFO  Task:129 - "erewrwerew" changed the status from: false to true
+2017-03-20 15:34:18 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:34:18 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-20 15:34:29 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-20 15:34:29 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-20 15:34:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:34:29 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-20 15:34:29 INFO  Task:129 - "21312312312" changed the status from: false to true
+2017-03-20 15:34:29 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:34:29 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-20 15:34:29 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-20 15:34:29 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-20 15:34:29 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-20 15:34:29 INFO  Task:129 - "erewrwerew" changed the status from: false to true
+2017-03-20 15:34:29 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:34:29 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-20 15:34:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:34:29 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:34:29 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:34:29 INFO  Tasks:33 - Add in calendar list succes
+2017-03-20 15:34:53 INFO  Task:112 - "erewrwerew" changed for "erewrwerew"
+2017-03-20 15:34:53 INFO  Task:129 - "erewrwerew" changed the status from: true to false
+2017-03-20 15:34:53 INFO  Task:112 - "erewrwerew" changed for "erewrwerew"
+2017-03-20 15:34:53 INFO  Task:129 - "erewrwerew" changed the status from: true to false
+2017-03-20 15:34:53 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-20 15:34:53 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:34:53 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:34:53 INFO  Tasks:33 - Add in calendar list succes
+2017-03-20 15:35:02 INFO  Task:112 - "21312312312" changed for "21312312312"
+2017-03-20 15:35:02 INFO  Task:129 - "21312312312" changed the status from: true to false
+2017-03-20 15:35:02 INFO  Task:112 - "21312312312" changed for "21312312312"
+2017-03-20 15:35:02 INFO  Task:129 - "21312312312" changed the status from: true to false
+2017-03-20 15:35:02 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-20 15:35:02 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:35:02 INFO  Tasks:33 - Add in calendar list succes

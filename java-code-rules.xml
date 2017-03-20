@@ -314,7 +314,7 @@
         <priority>3</priority>
     </rule>
     <!--<rule ref="rulesets/java/naming.xml/AbstractNaming">-->
-        <!--<priority>5</priority>-->
+    <!--<priority>5</priority>-->
     <!--</rule>-->
     <rule ref="rulesets/java/naming.xml/AvoidDollarSigns">
         <priority>5</priority>
@@ -335,7 +335,7 @@
         <priority>5</priority>
     </rule>
     <!--<rule ref="rulesets/java/naming.xml/AvoidFieldNameMatchingMethodName">-->
-        <!--<priority>5</priority>-->
+    <!--<priority>5</priority>-->
     <!--</rule>-->
     <rule ref="rulesets/java/naming.xml/NoPackage">
         <priority>3</priority>
@@ -376,7 +376,7 @@
     </rule>
 
     <!-- design.xml -->
-    <!--<rule ref="rulesets/java/design.xml/UseSingleton">-->
+    <!--<rule ref="rulesets/java/design.xml/UseUtilityClass">-->
     <!--<priority>1</priority>-->
     <!--</rule>-->
     <rule ref="rulesets/java/design.xml/SimplifyBooleanReturns">

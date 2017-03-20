@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.darth.milash.controller.RootController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+               </items></Menu>
+                <Menu mnemonicParsing="false" text="Help">
+               <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+               </items></Menu>
+            </menus>
+        </MenuBar>
+    </top>
+   <stylesheets>
+      <URL value="@/css/DarkTheme.css" />
+      <URL value="@../css/DarkTheme.css" />
+   </stylesheets>
+</BorderPane>

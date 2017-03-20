@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="335.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.darth.milash.controller.AlarmController">
+   <children>
+      <Button contentDisplay="CENTER" layoutX="95.0" layoutY="147.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="28.0" prefWidth="145.0" text="Ok" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="147.0" />
+      <Label fx:id="alarmTask" alignment="CENTER" layoutX="9.0" layoutY="71.0" prefHeight="62.0" prefWidth="314.0" styleClass="label-bright" text="Label" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="alarmDate" alignment="CENTER" layoutX="14.0" layoutY="10.0" prefHeight="28.0" prefWidth="314.0" styleClass="label-header" text="Label" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@/css/DarkTheme.css" />
+      <URL value="@../css/DarkTheme.css" />
+   </stylesheets>
+</AnchorPane>

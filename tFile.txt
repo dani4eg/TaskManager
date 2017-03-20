@@ -1,5 +1,0 @@
-"Task1" at [2017-02-24 23:14:24.000] inactive;
-"Task2" from [2017-02-23 14:52:23.000] to [2017-03-01 12:52:42.000] every [10 hours] inactive;
-"Task3" at [2017-02-22 16:28:00.000] inactive;
-"Task4" from [2017-02-22 11:11:11.000] to [2017-02-22 23:23:23.000] every [30 seconds] inactive;
-"Task5" from [2017-02-22 11:11:11.000] to [2017-02-22 23:23:23.000] every [7 seconds] inactive.

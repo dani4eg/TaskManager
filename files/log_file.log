@@ -144,3 +144,425 @@
 2017-03-20 15:35:02 INFO  TaskIO:101 - Text writing task SUCCESSFUL
 2017-03-20 15:35:02 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
 2017-03-20 15:35:02 INFO  Tasks:33 - Add in calendar list succes
+2017-03-20 15:38:23 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-20 15:38:23 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-20 15:38:23 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:23 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-20 15:38:23 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:38:23 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-20 15:38:23 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-20 15:38:23 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-20 15:38:23 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-20 15:38:23 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:38:23 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-20 15:38:25 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-20 15:38:25 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-20 15:38:25 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:25 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-20 15:38:25 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:38:25 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-20 15:38:25 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-20 15:38:25 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-20 15:38:25 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-20 15:38:25 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:38:25 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-20 15:38:25 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:25 INFO  Tasks:33 - Add in calendar list succes
+2017-03-20 15:38:28 INFO  Task:88 - Task "222222" created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-20 15:38:28 INFO  Task:129 - "222222" changed the status from: false to true
+2017-03-20 15:38:28 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:28 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-20 15:38:28 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:38:28 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-20 15:38:28 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-20 15:38:28 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-20 15:38:28 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-20 15:38:28 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:38:28 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-20 15:38:28 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:28 INFO  Tasks:33 - Add in calendar list succes
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:29 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:30 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:31 INFO  ArrayTaskList:54 - The "222222" added to ArrayList
+2017-03-20 15:38:43 INFO  Task:112 - "222222" changed for "10 sec "
+2017-03-20 15:38:43 INFO  Task:129 - "10 sec " changed the status from: true to true
+2017-03-20 15:38:43 INFO  Task:112 - "222222" changed for "10 sec "
+2017-03-20 15:38:43 INFO  Task:129 - "10 sec " changed the status from: true to true
+2017-03-20 15:38:43 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-20 15:38:43 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:43 INFO  Tasks:33 - Add in calendar list succes
+2017-03-20 15:38:51 INFO  Task:112 - "10 sec " changed for "10 sec "
+2017-03-20 15:38:51 INFO  Task:129 - "10 sec " changed the status from: true to true
+2017-03-20 15:38:51 INFO  Task:112 - "10 sec " changed for "10 sec "
+2017-03-20 15:38:51 INFO  Task:129 - "10 sec " changed the status from: true to true
+2017-03-20 15:38:51 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-20 15:38:51 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:51 INFO  Tasks:33 - Add in calendar list succes
+2017-03-20 15:38:52 INFO  Task:88 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-20 15:38:52 INFO  Task:129 - "10 sec " changed the status from: false to true
+2017-03-20 15:38:52 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:52 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-20 15:38:52 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-20 15:38:52 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-20 15:38:52 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-20 15:38:52 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-20 15:38:52 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-20 15:38:52 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-20 15:38:52 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-20 15:38:52 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:52 INFO  Tasks:33 - Add in calendar list succes
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-20 15:38:54 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-24 09:42:52 INFO  Task:88 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-24 09:42:52 INFO  Task:129 - "10 sec " changed the status from: false to true
+2017-03-24 09:42:52 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-24 09:42:52 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-24 09:42:52 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-24 09:42:52 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-24 09:42:52 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-24 09:42:52 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-24 09:42:52 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-24 09:42:52 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-24 09:42:52 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-24 09:43:01 INFO  Task:88 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End d9ate: [2017-03-20 22:11:34.000]. Active: false
+2017-03-24 09:43:01 INFO  Task:129 - "10 sec " changed the status from: false to true
+2017-03-24 09:43:01 INFO  ArrayTaskList:54 - The "10 sec " added to ArrayList
+2017-03-24 09:43:01 INFO  Task:88 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End d9ate: [2017-03-20 22:14:41.000]. Active: false
+2017-03-24 09:43:01 INFO  ArrayTaskList:54 - The "21312312312" added to ArrayList
+2017-03-24 09:43:01 INFO  Task:49 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-24 09:43:01 INFO  Task:129 - "1231232" changed the status from: false to true
+2017-03-24 09:43:01 INFO  ArrayTaskList:54 - The "1231232" added to ArrayList
+2017-03-24 09:43:01 INFO  Task:88 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End d9ate: [2017-03-22 22:15:29.000]. Active: false
+2017-03-24 09:43:01 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-24 09:43:01 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-24 09:43:01 INFO  Tasks:33 - Add in calendar list succes
+2017-03-24 09:43:51 INFO  Task:112 - "erewrwerew" changed for "erewrwerew"
+2017-03-24 09:43:51 INFO  Task:129 - "erewrwerew" changed the status from: false to false
+2017-03-24 09:43:51 INFO  Task:112 - "erewrwerew" changed for "erewrwerew"
+2017-03-24 09:43:51 INFO  Task:129 - "erewrwerew" changed the status from: false to false
+2017-03-24 09:43:51 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-24 09:43:51 INFO  Tasks:33 - Add in calendar list succes
+2017-03-24 09:44:14 INFO  Task:112 - "erewrwerew" changed for "erewrwerew"
+2017-03-24 09:44:14 INFO  Task:129 - "erewrwerew" changed the status from: false to true
+2017-03-24 09:44:14 INFO  Task:112 - "erewrwerew" changed for "erewrwerew"
+2017-03-24 09:44:14 INFO  Task:129 - "erewrwerew" changed the status from: false to true
+2017-03-24 09:44:14 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-24 09:44:14 INFO  ArrayTaskList:54 - The "erewrwerew" added to ArrayList
+2017-03-24 09:44:14 INFO  Tasks:33 - Add in calendar list succes

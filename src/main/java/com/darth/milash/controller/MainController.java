@@ -16,11 +16,10 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class MainController {
-    private static String formatDate = "dd.MM.yyyy HH:mm:ss";
     private static String fileName = "files/tFile.txt";
-    private static TaskList list;
-    public static final Object MONITOR = new Object();
-    public static boolean edit = false;
+    private TaskList list;
+    static final Object MONITOR = new Object();
+    static boolean edit = false;
 
     @FXML
     private TableView<Task> taskTable;
@@ -62,6 +61,7 @@ public class MainController {
     }
 
     public void showTaskDetails(Task task) {
+        String formatDate = "dd.MM.yyyy HH:mm:ss";
         SimpleDateFormat sdf = new SimpleDateFormat(formatDate, Locale.ENGLISH);
         if (task==null) {
             title.setText("");
@@ -96,7 +96,7 @@ public class MainController {
             taskTable.getItems().remove(selectedIndex);
             list.remove(list.getTask(selectedIndex));
             TaskIO.writeText(list, new File(fileName));
-            synchronized( MONITOR ) {
+            synchronized (MONITOR) {
                 MONITOR.notifyAll();
             }
         }

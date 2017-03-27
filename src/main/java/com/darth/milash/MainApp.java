@@ -26,7 +26,7 @@ import java.util.Date;
 
 public class MainApp extends Application {
 
-    public Logger logger = LoggerFactory.getLogger(ArrayTaskList.class);
+    public final Logger logger = LoggerFactory.getLogger(MainApp.class);
     private static TaskList list = new ArrayTaskList();
     private Stage primaryStage;
     private BorderPane rootLayout;

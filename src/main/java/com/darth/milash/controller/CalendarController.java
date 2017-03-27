@@ -17,9 +17,7 @@ import java.util.*;
 
 public class CalendarController {
 
-    private static String formatDate = "dd.MM.yyyy HH:mm:ss";
-    private static String fileName = "files/tFile.txt";
-    private static TaskList list;
+    private TaskList list;
     private Stage dialogStage;
 
 
@@ -35,6 +33,7 @@ public class CalendarController {
     @FXML
     public void initialize() throws IOException, ParseException {
         list = new ArrayTaskList();
+        String fileName = "files/tFile.txt";
         TaskIO.read(list, new FileReader(fileName));
     }
 
@@ -52,6 +51,7 @@ public class CalendarController {
     }
 
     public void calendar() {
+        String formatDate = "dd.MM.yyyy HH:mm:ss";
         SimpleDateFormat sdf = new SimpleDateFormat(formatDate, Locale.ENGLISH);
         Date sdate = new Date();
         Date edate = new Date(sdate.getTime() + (66400000));

@@ -13,11 +13,12 @@
         <mvn.plugin.compiler>3.5.1</mvn.plugin.compiler>
         <java.version>1.8</java.version>
         <pmd.version>3.7</pmd.version>
+        <findbugs.version>3.0.3</findbugs.version>
+        <findbugs.rules.version>1.2.4</findbugs.rules.version>
     </properties>
 
     <build>
         <plugins>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -45,6 +46,29 @@
                 <executions>
                     <execution>
                         <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>${findbugs.version}</version>
+                <configuration>
+                    <plugins>
+                        <plugin>
+                            <groupId>jp.skypencil.findbugs.slf4j</groupId>
+                            <artifactId>bug-pattern</artifactId>
+                            <version>1.2.4</version>
+                        </plugin>
+                    </plugins>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>analyze-compile</id>
+                        <phase>compile</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>

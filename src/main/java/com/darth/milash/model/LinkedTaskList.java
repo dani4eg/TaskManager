@@ -2,7 +2,6 @@ package com.darth.milash.model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.text.SimpleDateFormat;
 import java.util.Iterator;
 import java.util.Locale;
@@ -13,7 +12,7 @@ import java.util.NoSuchElementException;
  */
 public class LinkedTaskList extends TaskList implements Cloneable{
 
-    Logger logger = LoggerFactory.getLogger(LinkedTaskList.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(LinkedTaskList.class);
     /**
      * Ссылка на первый элемент списка
      */
@@ -59,7 +58,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
         newLink.next = first;
         first = newLink;
         size++;
-        logger.info("The \"" + task.getTitle() + "\" added to LinkedList");
+        LOGGER.info("The \"" + task.getTitle() + "\" added to LinkedList");
     }
 
     /**
@@ -71,7 +70,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     @Override
     public Task getTask(int index) throws NullPointerException {
         if (index>=size()) {
-            logger.error("The element not found");
+            LOGGER.error("The element not found");
         }
         Link current = first;
         for (int i = 0; i < index; i++) {
@@ -91,13 +90,13 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     @Override
     public boolean remove (Task task)throws NullPointerException {
         if (task == null ) {
-            logger.error("Deleted empty element in LinkedList");
+            LOGGER.error("Deleted empty element in LinkedList");
         }
         Link current = first;
         Link prev = first;
         while (current.getTask()!=task) {
             if (current.getNext() == null) {
-                logger.info("The element not found in LinkedList");
+                LOGGER.info("The element not found in LinkedList");
                 return false;
             }
             else {
@@ -109,7 +108,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
             first = first.getNext();
         }
         else prev.setNext(current.getNext());
-        logger.info("The \"" + task.getTitle() + "\" deleted from LinkedList");
+        LOGGER.info("The \"" + task.getTitle() + "\" deleted from LinkedList");
         size--;
         return true;
     }
@@ -246,7 +245,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
         try {
             clone = (LinkedTaskList) super.clone();
         } catch (CloneNotSupportedException e) {
-            logger.error("CloneNotSupportedException");
+            LOGGER.error("CloneNotSupportedException");
         }
         return clone;
     }

@@ -14,7 +14,7 @@ import java.util.NoSuchElementException;
  */
 public class ArrayTaskList extends TaskList implements Cloneable {
 
-    Logger logger = LoggerFactory.getLogger(ArrayTaskList.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ArrayTaskList.class);
 
     /**
      * @param tasks создаем массив типа Task и не инициализируем его
@@ -51,7 +51,7 @@ public class ArrayTaskList extends TaskList implements Cloneable {
             System.arraycopy(tasks, 0, tArr, 0, size);
             tasks = tArr;
         }
-        logger.info("The \"" + task.getTitle() + "\" added to ArrayList");
+        LOGGER.info("The \"" + task.getTitle() + "\" added to ArrayList");
         tasks[size] = task;
         size++;
     }
@@ -79,13 +79,13 @@ public class ArrayTaskList extends TaskList implements Cloneable {
     {
         for (int i = 0; i < size; i++) {
             if (task.equals(tasks[i])) {
-                logger.info("The \"" + task.getTitle() + "\" deleted from ArrayList");
+                LOGGER.info("The \"" + task.getTitle() + "\" deleted from ArrayList");
                 System.arraycopy(tasks, i+1, tasks, i, size-1-i);
                 size--;
                 return true;
             }
         }
-        logger.info("The element not found in ArrayList");
+        LOGGER.info("The element not found in ArrayList");
         return false;
     }
 
@@ -188,8 +188,7 @@ public class ArrayTaskList extends TaskList implements Cloneable {
         for (int i = 0; i < size; i++) {
             text += "\"" + getTask(i).getTitle() + "\"";
             if (i==size-1) text+=".";
-            else text+=";";
-            text += "\n";
+            else text += ";\n";
         }
         return text;
     }
@@ -200,7 +199,7 @@ public class ArrayTaskList extends TaskList implements Cloneable {
             arrayTaskList = (ArrayTaskList) super.clone();
             arrayTaskList.tasks  = Arrays.copyOf(tasks, tasks.length);
         } catch (CloneNotSupportedException e) {
-            logger.error("CloneNotSupportedException");
+            LOGGER.error("CloneNotSupportedException");
         }
         return arrayTaskList;
     }

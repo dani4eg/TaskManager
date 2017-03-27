@@ -20,10 +20,10 @@ public class Task implements Cloneable, Serializable {
     private Date end;
     private int interval;
     private boolean active;
-    Date date = null;
-    SimpleDateFormat sdate = new SimpleDateFormat("[YYYY-MM-dd HH:mm:ss.SSS]", Locale.ENGLISH);
+    private Date date = null;
+    private final SimpleDateFormat sdate = new SimpleDateFormat("[YYYY-MM-dd HH:mm:ss.SSS]", Locale.ENGLISH);
 
-    Logger logger = LoggerFactory.getLogger(Task.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(Task.class);
     /**
      * Constructor for task without interval
      * @param title - name of task
@@ -32,11 +32,11 @@ public class Task implements Cloneable, Serializable {
      */
     public Task(String title, int time) throws IllegalArgumentException {
         if (time < 0 ) {
-            logger.error("The time can not be negative");
+            LOGGER.error("The time can not be negative");
             throw new IllegalArgumentException ();
         }
         this.title = title;
-        date = new Date(time*1000);
+        date = new Date((long)time*1000);
         this.start = date;
         this.end = date;
     }
@@ -44,9 +44,9 @@ public class Task implements Cloneable, Serializable {
 
     public Task(String title, Date time) throws IllegalArgumentException {
         this.title = title;
-        this.start = time;
-        this.end = time;
-        logger.info("Task \"" + this.title + "\" created. Start date: " +
+        this.start = new Date(time.getTime());
+        this.end = new Date(time.getTime());
+        LOGGER.info("Task \"" + this.title + "\" created. Start date: " +
                 sdate.format(time) + ". Active: " + this.active);
     }
 
@@ -58,34 +58,33 @@ public class Task implements Cloneable, Serializable {
      * @throws IllegalArgumentException
      */
     public Task(String title, int start, int end, int interval) throws IllegalArgumentException {
-        if (start < 0 || end <0 || interval <0)
-        {
-            logger.error("The time or interval of " + title + " can not be negative");
+        if (start < 0 || end <0 || interval <0) {
+            LOGGER.error("The time or interval of " + title + " can not be negative");
             throw new IllegalArgumentException();
         }
         else if (start > end) {
-            logger.error("The end date of " + title + " must not be earlier than start date");
+            LOGGER.error("The end date of " + title + " must not be earlier than start date");
             throw new IllegalArgumentException();
         }
         this.title = title;
-        this.start = new Date(start*1000);
-        this.end = new Date(end*1000);
+        this.start = new Date((long)start*1000);
+        this.end = new Date((long)end*1000);
         this.interval = interval*1000;
     }
     public Task(String title, Date start, Date end, int interval) throws IllegalArgumentException {
         if (interval <0) {
-            logger.error("The time or interval of " + this.title + " can not be negative");
+            LOGGER.error("The time or interval of " + this.title + " can not be negative");
             throw new IllegalArgumentException();
         }
         else if (start.after(end)) {
-            logger.error("The end date of " + this.title + " must not be earlier than start date");
+            LOGGER.error("The end date of " + this.title + " must not be earlier than start date");
             throw new IllegalArgumentException();
         }
         this.title = title;
-        this.start = start;
-        this.end = end;
+        this.start = new Date(start.getTime());
+        this.end = new Date(end.getTime());
         this.interval = interval*1000;
-        logger.info("Task \"" + title + "\" created. Start date: " +
+        LOGGER.info("Task \"" + title + "\" created. Start date: " +
                 sdate.format(start) + " End d9ate: " +
                 sdate.format(end) + ". Active: " + this.active);
     }
@@ -109,7 +108,7 @@ public class Task implements Cloneable, Serializable {
      * @param title название, которое надо поменять
      */
     public void setTitle(String title) {
-        logger.info("\"" + this.title + "\" changed for \"" + title + "\"");
+        LOGGER.info("\"" + this.title + "\" changed for \"" + title + "\"");
         this.title = title;
     }
 
@@ -126,7 +125,7 @@ public class Task implements Cloneable, Serializable {
      * @param active true - если задача активна, falls - если не активна
      */
     public void setActive(boolean active) {
-        logger.info("\"" + this.title + "\" changed the status from: " + this.active + " to " + active);
+        LOGGER.info("\"" + this.title + "\" changed the status from: " + this.active + " to " + active);
         this.active = active;
     }
 
@@ -136,7 +135,7 @@ public class Task implements Cloneable, Serializable {
      * @return start если задача повторяется, при этом start = start (см конструктор)
      */
     public Date getTime() {
-        return this.start;
+        return new Date(this.start.getTime());
     }
 
     /**
@@ -146,10 +145,10 @@ public class Task implements Cloneable, Serializable {
      */
     public void setTime(int time) throws IllegalArgumentException {
         if (time < 0) {
-            logger.error("The time can not be negative");
+            LOGGER.error("The time can not be negative");
             throw new IllegalArgumentException();
         }
-        date = new Date(time*1000);
+        date = new Date((long)time*1000);
         this.start = date;
         this.end = date;
         this.interval = 0;
@@ -157,11 +156,11 @@ public class Task implements Cloneable, Serializable {
     }
 
     public void setTime(Date time) throws IllegalArgumentException {
-        logger.info("\"" + this.title + "\" changed the start date from: " +
+        LOGGER.info("\"" + this.title + "\" changed the start date from: " +
                 sdate.format(this.start) + " to: " +
                 sdate.format(time) + ". Not repeated");
-        this.start = time;
-        this.end = time;
+        this.start = new Date(time.getTime());
+        this.end = new Date(time.getTime());
         this.interval = 0;
     }
 
@@ -171,7 +170,7 @@ public class Task implements Cloneable, Serializable {
      * @return start если задача не повторяется - возвращает start - при том, что start = time (см конструктор)
      */
     public Date getStartTime() {
-        return this.start;
+        return new Date(start.getTime());
     }
 
     /**
@@ -180,7 +179,7 @@ public class Task implements Cloneable, Serializable {
      * @return end если задача не повторяется - возвращает end - при том, что end = time (см конструктор)
      */
     public Date getEndTime() {
-        return end;
+        return new Date(end.getTime());
     }
 
     /**
@@ -200,16 +199,16 @@ public class Task implements Cloneable, Serializable {
      */
     public void setTime(int start, int end, int interval) throws IllegalArgumentException {
         if (interval <0) {
-            logger.error("The time or interval of \"" + this.title + "\" can not be negative");
+            LOGGER.error("The time or interval of \"" + this.title + "\" can not be negative");
             throw new IllegalArgumentException();
         }
         else if (start > end) {
-            logger.error("The end date of \"" + this.title + "\" must not be earlier than start date");
+            LOGGER.error("The end date of \"" + this.title + "\" must not be earlier than start date");
             throw new IllegalArgumentException();
         }
-        date = new Date(start*1000);
-        this.end = new Date(end*1000);
-        logger.info("\"" + this.title + "\" changed the start date from: " +
+        date = new Date((long)start*1000);
+        this.end = new Date((long)end*1000);
+        LOGGER.info("\"" + this.title + "\" changed the start date from: " +
                 sdate.format(this.start) + " to: " +
                 sdate.format(date) + ". End date changed to: " +
                 sdate.format(this.end) + ". Repeated");
@@ -219,28 +218,28 @@ public class Task implements Cloneable, Serializable {
 
     public void setTime(Date start, Date end, int interval) throws IllegalArgumentException {
         if (interval <0) {
-            logger.error("The time or interval of \"" + this.title + "\" can not be negative");
-            throw new IllegalArgumentException ("The time or interval can not be negative");
+            LOGGER.error("The time or interval of \"" + this.title + "\" can not be negative");
+            throw new IllegalArgumentException();
         }
         else if (start.after(end)) {
-            logger.error("The end date of \"" + this.title + "\" must not be earlier than start date");
-            throw new IllegalArgumentException ("The end date must not be earlier than start date");
+            LOGGER.error("The end date of \"" + this.title + "\" must not be earlier than start date");
+            throw new IllegalArgumentException();
         }
-        this.end = end;
-        logger.info("\"" + this.title + "\" changed the start date from: " +
+        this.end = new Date(end.getTime());
+        LOGGER.info("\"" + this.title + "\" changed the start date from: " +
                 sdate.format(this.start) + " to: " +
                 sdate.format(start) + ". End date changed to: " +
                 sdate.format(this.end) + ". Repeated");
-        this.start = start;
+        this.start = new Date(start.getTime());
         this.interval = interval;
     }
 
     public void setStart(Date start) {
-        this.start = start;
+        this.start = new Date(start.getTime());
     }
 
     public void setEnd(Date end) {
-        this.end = end;
+        this.end = new Date(end.getTime());
     }
 
     public void setInterval(int interval) {
@@ -277,7 +276,7 @@ public class Task implements Cloneable, Serializable {
                 }
             } else {
                 if (this.start.after(current))
-                    return this.start;
+                    return new Date(this.start.getTime());
                 else
                     return new Date(-1);
             }

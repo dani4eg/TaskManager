@@ -119,6 +119,15 @@
         <priority>5</priority>
     </rule>
 
+    <rule ref="rulesets/java/logging-java.xml/SystemPrintln">
+        <priority>5</priority>
+    </rule>
+
+    <!--<rule ref="rulesets/java/logging-java.xml/InvalidSlf4jMessageFormat">-->
+        <!--<priority>5</priority>-->
+    <!--</rule>-->
+
+
     <!-- unnecessary.xml -->
     <rule ref="rulesets/java/unnecessary.xml/UselessOperationOnImmutable">
         <priority>5</priority>
@@ -574,5 +583,4 @@
         <exclude name="IfStmtsMustUseBraces"/>
         <exclude name="ForLoopsMustUseBraces"/>
     </rule>
-
 </ruleset>

@@ -10,7 +10,7 @@ import java.util.*;
 public class Tasks {
 
 
-    static Logger logger = LoggerFactory.getLogger(Tasks.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(Tasks.class);
     /**
      * Метод возвращает список задач, которые будут выполнены в данном промежутке времени
      * Создаем новый лист
@@ -30,14 +30,14 @@ public class Tasks {
                 list.add(task);
             }
         }
-        logger.info("Add in calendar list succes");
+        LOGGER.info("Add in calendar list succes");
 //        System.out.println(list);
         return list;
     }
 
     public static SortedMap<Date, Set<Task>> calendar(Iterable<Task> tasks, Date start, Date end)  throws IllegalArgumentException{
         if(end.before(start)) {
-            logger.error("The end date must not be earlier than start date");
+            LOGGER.error("The end date must not be earlier than start date");
             throw new IllegalArgumentException();
         }
         SortedMap<Date, Set<Task>> map = new TreeMap<>();
@@ -62,20 +62,7 @@ public class Tasks {
 
                     date.setTime(date.getTime() + task.getRepeatInterval());
                 }
-////                } else {
-//                    date = task.nextTimeAfter(date);
-//                    Set<Task> set = new HashSet<>();
-//                    if (map.containsKey(date)) {
-//                        set = map.get(date);
-//                    }
-//                    set.add(task);
-//                    map.put((Date) date.clone(), set);
-//                }
-
             }
-
-
-//            System.out.println(map);
         }
 
 

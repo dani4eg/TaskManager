@@ -2,7 +2,6 @@ package com.darth.milash.model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -15,71 +14,50 @@ import java.util.NoSuchElementException;
 public class ArrayTaskList extends TaskList implements Cloneable {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ArrayTaskList.class);
+    private Task[] tasks;
 
-    /**
-     * @param tasks создаем массив типа Task и не инициализируем его
-     * @param size размер массива (в нек.случаях индекс)
-     */
-    public Task[] tasks;
-
-    /**
-     * Конструктор, создает массив размером size
-     * @param size размер массива
-     */
     public ArrayTaskList(int size) {
         tasks = new Task[size];
     }
 
-    /**
-     * Конструктор стандартный, создает массив размером в 10 элементов
-     */
     public ArrayTaskList() {
         tasks  =new Task[10];
     }
 
     /**
-     * Метод добавления задачи в массив
-     * @param task задача, которую мы добавляем
-     * Если количество добавленных задач будет больше размера массива - увеличиваем массив tasks
-     * И добавляем в конец задачу
-     * Увеличиваем size на единицу
+     * Add tasks in array
+     * @param task the task
      */
-    public void add(Task task) throws NullPointerException
-    {
+    public void add(Task task) throws NullPointerException {
         if (size >= tasks.length) {
             Task[] tArr = new Task[(size*3)/2 +1];
             System.arraycopy(tasks, 0, tArr, 0, size);
             tasks = tArr;
         }
-        LOGGER.info("The \"" + task.getTitle() + "\" added to ArrayList");
+        LOGGER.info("The \"{}\" added to ArrayList", task.getTitle());
         tasks[size] = task;
         size++;
     }
 
     /**
-     * Метод возвращает задачу которая находится на указанном месте в списке
-     * @param index место в списке
-     * @return возвращает задачу
+     * Return the task by index
+     * @param index the index of task
+     * @return task
      */
     public Task getTask(int index) {
-//        if(index<0 || index>=size){
-//            throw new ArrayIndexOutOfBoundsException();
-//        }
         return tasks[index];
     }
 
     /**
-     * Метод удаляет задачу и возвращает true - если задача была в списке
-     * Если в списке было более одной задачи - удаляет одну
-     * Уменьшает размер массива на 1 после удаления
-     * @param task ищем задачу, которую надо удалить
-     * @return возвращает true или falls - если задача не найдена в списке
+     * Delete the task
+     * @param task the task that is deleted
+     * @return true or falls - if the task is not found in the list
      */
     public boolean remove (Task task) throws NullPointerException
     {
         for (int i = 0; i < size; i++) {
             if (task.equals(tasks[i])) {
-                LOGGER.info("The \"" + task.getTitle() + "\" deleted from ArrayList");
+                LOGGER.info("The \"{}\" deleted from ArrayList", task.getTitle());
                 System.arraycopy(tasks, i+1, tasks, i, size-1-i);
                 size--;
                 return true;
@@ -90,30 +68,19 @@ public class ArrayTaskList extends TaskList implements Cloneable {
     }
 
     /**
-     * Создание итератора
-     * @return итератор с переопределенными методами
+     * Iterator
+     * @return iterator
      */
     public Iterator iterator() {
         return new Iterator() {
             private Task[] list = tasks;
             private int count;
 
-            /**
-             * Проверка на наличие следующего элемента
-             * Если счетчик меньше размера, то возвращает true
-             * @return true
-             */
             @Override
             public boolean hasNext() {
                 return count < size;
             }
 
-            /**
-             * Метод перехода итератора на след элемент
-             * увеличивыем count на 1
-             * @throws NoSuchElementException, если первый элемент пустой
-             * @return task
-             */
             @Override
             public Task next() {
                 if (list[0] == null) {
@@ -125,12 +92,6 @@ public class ArrayTaskList extends TaskList implements Cloneable {
                 return task;
             }
 
-            /**
-             * Метод удаления элемента
-             * @throws IllegalStateException, если next() не выполнится хоть раз
-             * Удаляем элемент
-             * Уменьшаем счетчик и размер на 1
-             */
             @Override
             public void remove() {
                 if (count == 0) {

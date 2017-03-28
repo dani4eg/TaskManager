@@ -13,44 +13,33 @@ import java.util.NoSuchElementException;
 public class LinkedTaskList extends TaskList implements Cloneable{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(LinkedTaskList.class);
-    /**
-     * Ссылка на первый элемент списка
-     */
     private Link first;
 
     /**
-     * Класс Link создает элемент списка
-     * task наши данные в виде задач
-     * next - ссылка на следующий элемент списка
+     * The Link class creates a list item
      */
 
     public static class Link {
         final private Task task;
         private Link next;
-
         public Task getTask() {
             return task;
         }
-        public Link getNext() {
+        Link getNext() {
             return next;
         }
-        public void setNext(Link next) {
+        void setNext(Link next) {
             this.next = next;
         }
-        public Link(Task task) {
+        Link(Task task) {
             this.task = task;
         }
     }
 
     /**
-     * Метод добавления задачи в список
-     * @param task задача, которую мы добавляем
-     * newLink создаем новый элемент
-     * newLink --> старое значение first
-     * first --> newLink
-     * И добавляем в начало
-     * Увеличиваем size на единицу
-     * @throws NullPointerException исключение при вводе пустого значения
+     * Method of adding a task to the list
+     * @param task the task that we are adding
+     * @throws NullPointerException exception when you enter an empty value
      */
     @Override
     public void add(Task task) throws NullPointerException {
@@ -58,14 +47,14 @@ public class LinkedTaskList extends TaskList implements Cloneable{
         newLink.next = first;
         first = newLink;
         size++;
-        LOGGER.info("The \"" + task.getTitle() + "\" added to LinkedList");
+        LOGGER.info("The \"{}\" added to ArrayList", task.getTitle());
     }
 
     /**
-     * Метод возвращает задачу которая находится на указанном месте в списке
-     * @param index место в списке
-     * @return возвращает задачу
-     * @throws NullPointerException исключение если индекс больше чем размер списка
+     * The method returns a task that is at the specified location in the list
+     * @param index place in the list
+     * @ Return returns task
+     * @throws NullPointerException exception if the index is greater than the list size
      */
     @Override
     public Task getTask(int index) throws NullPointerException {
@@ -80,12 +69,10 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     }
 
     /**
-     * Метод удаляет задачу и возвращает true - если задача была в списке
-     * Если в списке было более одной задачи - удаляет одну
-     * Уменьшает размер списка на 1 после удаления
-     * @param task ищем задачу, которую надо удалить
-     * @return возвращает true или falls - если задача не найдена в списке
-     * @throws NullPointerException при удалении пустого элемента
+     * The method deletes the task and returns true - if the task was in the list
+     * @param task Look for the task to be removed
+     * @ Return returns true or falls - if the task is not found in the list
+     * @throws NullPointerException when deleting an empty element
      */
     @Override
     public boolean remove (Task task)throws NullPointerException {
@@ -108,7 +95,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
             first = first.getNext();
         }
         else prev.setNext(current.getNext());
-        LOGGER.info("The \"" + task.getTitle() + "\" deleted from LinkedList");
+        LOGGER.info("The \"{}\" added to ArrayList", task.getTitle());
         size--;
         return true;
     }

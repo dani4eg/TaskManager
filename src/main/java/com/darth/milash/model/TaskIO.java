@@ -129,7 +129,7 @@ public class TaskIO {
      * @param file
      */
     public static void  writeText(TaskList tasks, File file) {
-        try (Writer writer = new FileWriter(file)) {
+        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF-8"))) {
             write(tasks, writer);
         } catch (IOException e) {
             LOGGER.error("Text writing task in file ERROR");
@@ -143,7 +143,7 @@ public class TaskIO {
      * @throws ParseException
      */
     public static void readText(TaskList tasks, File file) throws ParseException {
-        try (Reader reader = new FileReader(file)) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"))) {
             read(tasks, reader);
         }catch(IOException e){
             LOGGER.error("Text reading task from file ERROR");

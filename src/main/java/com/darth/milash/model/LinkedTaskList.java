@@ -2,6 +2,8 @@ package com.darth.milash.model;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Iterator;
 import java.util.Locale;
@@ -19,7 +21,7 @@ public class LinkedTaskList extends TaskList implements Cloneable{
      * The Link class creates a list item
      */
 
-    public static class Link {
+    public static class Link implements Serializable {
         final private Task task;
         private Link next;
         public Task getTask() {

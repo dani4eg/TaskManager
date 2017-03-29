@@ -16,7 +16,7 @@ public class Task implements Cloneable, Serializable {
     private Date start;
     private Date end;
     private int interval;
-    private boolean active;
+    private boolean active = false;
     private Date date = null;
     private final SimpleDateFormat sdate = new SimpleDateFormat("[YYYY-MM-dd HH:mm:ss.SSS]", Locale.ENGLISH);
 
@@ -70,11 +70,11 @@ public class Task implements Cloneable, Serializable {
     }
     public Task(String title, Date start, Date end, int interval) throws IllegalArgumentException {
         if (interval <0) {
-            LOGGER.error("The time or interval of {} can not be negative", this.title);
+            LOGGER.error("The time or interval of {} can not be negative", title);
             throw new IllegalArgumentException();
         }
         else if (start.after(end)) {
-            LOGGER.error("The end date of {} must not be earlier than start date", this.title);
+            LOGGER.error("The end date of {} must not be earlier than start date", title);
             throw new IllegalArgumentException();
         }
         this.title = title;

@@ -18,15 +18,14 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+
+import java.io.*;
 import java.text.ParseException;
 import java.util.Date;
 
 public class MainApp extends Application {
 
-    public final Logger logger = LoggerFactory.getLogger(MainApp.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(MainApp.class);
     private static TaskList list = new ArrayTaskList();
     private Stage primaryStage;
     private BorderPane rootLayout;
@@ -58,7 +57,7 @@ public class MainApp extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException e) {
-            logger.error("RootWindow data access error");
+            LOGGER.error("RootWindow data access error");
         }
     }
 
@@ -72,7 +71,7 @@ public class MainApp extends Application {
             controller.setMainApp(this);
 
         } catch (IOException e) {
-            logger.error("TaskWindow data access error");
+            LOGGER.error("TaskWindow data access error");
         }
     }
 
@@ -85,7 +84,7 @@ public class MainApp extends Application {
 
     public MainApp() throws FileNotFoundException, ParseException {
         String fileName = "files/tFile.txt";
-        TaskIO.read(list, new FileReader(fileName));
+        TaskIO.readText(list, new File(fileName));
         for (int i = 0; i < list.size(); i++) {
             taskData.add(list.getTask(i));
         }
@@ -113,7 +112,7 @@ public class MainApp extends Application {
 
             return controller.isOkClicked();
         } catch (IOException e) {
-            logger.error("TaskEditDialog data access error");
+            LOGGER.error("TaskEditDialog data access error");
             return false;
         }
     }
@@ -138,7 +137,7 @@ public class MainApp extends Application {
 
             return controller.isOkClicked();
         } catch (IOException e) {
-            logger.error("CalendarWindow data access error");
+            LOGGER.error("CalendarWindow data access error");
             return false;
         }
     }
@@ -162,7 +161,7 @@ public class MainApp extends Application {
 
             return alarmController.isOkClicked();
         } catch (IOException e) {
-            logger.error("AlarmWindow data access error");
+            LOGGER.error("AlarmWindow data access error");
             return false;
         }
     }

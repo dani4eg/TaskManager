@@ -8,14 +8,16 @@ import javafx.scene.control.Label;
 import com.darth.milash.MainApp;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class MainController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(MainController.class);
     private static String fileName = "files/tFile.txt";
     private TaskList list;
     static final Object MONITOR = new Object();
@@ -48,7 +50,7 @@ public class MainController {
                 (observable, oldValue, newValue) -> showTaskDetails(newValue));
 
         list = new ArrayTaskList();
-        TaskIO.read(list, new FileReader(fileName));
+        TaskIO.readText(list, new File(fileName));
         myThread.setDaemon(true);
         myThread.start();
 
@@ -191,7 +193,7 @@ public class MainController {
                             MONITOR.wait();
                         }
                     } catch (InterruptedException e1) {
-                        mainApp.logger.error("Error");
+                        LOGGER.error("Error");
                     }
                 }
                 for (Map.Entry<Date, Set<Task>> pair : map.entrySet()) {
@@ -204,7 +206,7 @@ public class MainController {
                             MONITOR.wait(waitmills);
                         }
                     } catch (InterruptedException e) {
-                        mainApp.logger.error("Error");
+                        LOGGER.error("Error");
                     }
                     if (size == list.size() && !edit) {
                         for (Task task : pair.getValue()) {

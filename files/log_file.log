@@ -265,3 +265,420 @@
 2017-03-29 11:41:35 INFO  TaskIO:101 - Text writing task SUCCESSFUL
 2017-03-29 11:41:35 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
 2017-03-29 11:41:35 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:04:19 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:04:19 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:04:19 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:04:19 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:04:19 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:04:19 INFO  Task:46 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-29 16:04:19 INFO  Task:119 - "1231232" changed the status from: false to true
+2017-03-29 16:04:19 INFO  ArrayTaskList:37 - The "1231232" added to ArrayList
+2017-03-29 16:04:19 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:04:19 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:04:19 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:04:19 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:04:19 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:04:19 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:04:19 INFO  Task:46 - Task "LOOL" created. Start date: [2017-03-27 11:50:34.000]. Active: false
+2017-03-29 16:04:19 INFO  Task:119 - "LOOL" changed the status from: false to true
+2017-03-29 16:04:19 INFO  ArrayTaskList:37 - The "LOOL" added to ArrayList
+2017-03-29 16:04:19 INFO  Task:84 - Task "FORA_copys_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-29 11:50:28.000]. Active: false
+2017-03-29 16:04:19 INFO  Task:119 - "FORA_copys_copy" changed the status from: false to true
+2017-03-29 16:04:19 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:04:19 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:04:26 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:04:26 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:04:26 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:04:26 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:04:26 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:04:26 INFO  Task:46 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-29 16:04:26 INFO  Task:119 - "1231232" changed the status from: false to true
+2017-03-29 16:04:26 INFO  ArrayTaskList:37 - The "1231232" added to ArrayList
+2017-03-29 16:04:26 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:04:26 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:04:26 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:04:26 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:04:26 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:04:26 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:04:26 INFO  Task:46 - Task "LOOL" created. Start date: [2017-03-27 11:50:34.000]. Active: false
+2017-03-29 16:04:26 INFO  Task:119 - "LOOL" changed the status from: false to true
+2017-03-29 16:04:26 INFO  ArrayTaskList:37 - The "LOOL" added to ArrayList
+2017-03-29 16:04:26 INFO  Task:84 - Task "FORA_copys_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-29 11:50:28.000]. Active: false
+2017-03-29 16:04:26 INFO  Task:119 - "FORA_copys_copy" changed the status from: false to true
+2017-03-29 16:04:26 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:04:26 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:04:26 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:33:51 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:33:51 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:33:51 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:33:51 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:33:51 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:33:51 INFO  Task:46 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-29 16:33:51 INFO  Task:119 - "1231232" changed the status from: false to true
+2017-03-29 16:33:51 INFO  ArrayTaskList:37 - The "1231232" added to ArrayList
+2017-03-29 16:33:51 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:33:51 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:33:51 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:33:51 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:33:51 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:33:51 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:33:51 INFO  Task:46 - Task "LOOL" created. Start date: [2017-03-27 11:50:34.000]. Active: false
+2017-03-29 16:33:51 INFO  Task:119 - "LOOL" changed the status from: false to true
+2017-03-29 16:33:51 INFO  ArrayTaskList:37 - The "LOOL" added to ArrayList
+2017-03-29 16:33:51 INFO  Task:84 - Task "FORA_copys_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-29 11:50:28.000]. Active: false
+2017-03-29 16:33:51 INFO  Task:119 - "FORA_copys_copy" changed the status from: false to true
+2017-03-29 16:33:51 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:33:51 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:33:59 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:33:59 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:33:59 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:33:59 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:33:59 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:33:59 INFO  Task:46 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-29 16:33:59 INFO  Task:119 - "1231232" changed the status from: false to true
+2017-03-29 16:33:59 INFO  ArrayTaskList:37 - The "1231232" added to ArrayList
+2017-03-29 16:33:59 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:33:59 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:33:59 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:33:59 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:33:59 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:33:59 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:33:59 INFO  Task:46 - Task "LOOL" created. Start date: [2017-03-27 11:50:34.000]. Active: false
+2017-03-29 16:33:59 INFO  Task:119 - "LOOL" changed the status from: false to true
+2017-03-29 16:33:59 INFO  ArrayTaskList:37 - The "LOOL" added to ArrayList
+2017-03-29 16:33:59 INFO  Task:84 - Task "FORA_copys_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-29 11:50:28.000]. Active: false
+2017-03-29 16:33:59 INFO  Task:119 - "FORA_copys_copy" changed the status from: false to true
+2017-03-29 16:33:59 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:33:59 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:33:59 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:34:12 INFO  Task:46 - Task "" created. Start date: [2017-03-29 16:34:12.160]. Active: false
+2017-03-29 16:34:12 INFO  Task:102 - "" changed for "FORA_copys_copy_copy"
+2017-03-29 16:34:12 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:34:12 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:34:12 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:34:12 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:34:18 INFO  ArrayTaskList:60 - The "LOOL" deleted from ArrayList
+2017-03-29 16:34:18 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:34:18 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:34:21 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:34:21 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:34:21 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:34:21 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:34:21 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:34:21 INFO  Task:46 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-29 16:34:21 INFO  Task:119 - "1231232" changed the status from: false to true
+2017-03-29 16:34:21 INFO  ArrayTaskList:37 - The "1231232" added to ArrayList
+2017-03-29 16:34:21 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:34:21 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:34:21 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:34:21 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:34:21 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:34:21 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:34:21 INFO  Task:84 - Task "FORA_copys_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-29 11:50:28.000]. Active: false
+2017-03-29 16:34:21 INFO  Task:119 - "FORA_copys_copy" changed the status from: false to true
+2017-03-29 16:34:21 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:21 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-29 11:50:28.000]. Active: false
+2017-03-29 16:34:21 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:34:21 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:34:21 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:34:21 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:34:31 INFO  Task:102 - "FORA_copys_copy" changed for "FORA_copys_copy"
+2017-03-29 16:34:31 INFO  Task:119 - "FORA_copys_copy" changed the status from: true to true
+2017-03-29 16:34:31 INFO  Task:102 - "FORA_copys_copy" changed for "FORA_copys_copy"
+2017-03-29 16:34:31 INFO  Task:119 - "FORA_copys_copy" changed the status from: true to true
+2017-03-29 16:34:31 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:34:31 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:31 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:34:35 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:34:35 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:34:35 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:34:35 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:34:35 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:34:35 INFO  Task:46 - Task "1231232" created. Start date: [2017-03-19 22:15:48.000]. Active: false
+2017-03-29 16:34:35 INFO  Task:119 - "1231232" changed the status from: false to true
+2017-03-29 16:34:35 INFO  ArrayTaskList:37 - The "1231232" added to ArrayList
+2017-03-29 16:34:35 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:34:35 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:34:35 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:34:35 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:34:35 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:34:35 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:34:35 INFO  Task:84 - Task "FORA_copys_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 16:34:35 INFO  Task:119 - "FORA_copys_copy" changed the status from: false to true
+2017-03-29 16:34:35 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:35 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-29 11:50:28.000]. Active: false
+2017-03-29 16:34:35 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:34:35 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:34:35 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:34:35 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:35 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:47 INFO  ArrayTaskList:60 - The "1231232" deleted from ArrayList
+2017-03-29 16:34:47 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:34:47 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:34:47 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:39:28 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:39:28 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:39:28 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:39:28 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:39:28 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:39:28 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:39:28 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:39:28 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:39:28 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:39:28 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:39:28 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:39:28 INFO  Task:84 - Task "FORA_copys_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 16:39:28 INFO  Task:119 - "FORA_copys_copy" changed the status from: false to true
+2017-03-29 16:39:28 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:39:28 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-29 11:50:28.000]. Active: false
+2017-03-29 16:39:28 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:39:28 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:39:28 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:39:34 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:39:34 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:39:34 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:39:34 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:39:34 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:39:34 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:39:34 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:39:34 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:39:34 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:39:34 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:39:34 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:39:34 INFO  Task:84 - Task "FORA_copys_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 16:39:34 INFO  Task:119 - "FORA_copys_copy" changed the status from: false to true
+2017-03-29 16:39:34 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:39:34 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-29 11:50:28.000]. Active: false
+2017-03-29 16:39:34 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:39:34 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:39:34 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:39:34 INFO  ArrayTaskList:37 - The "FORA_copys_copy" added to ArrayList
+2017-03-29 16:39:34 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:39:41 INFO  ArrayTaskList:60 - The "FORA_copys_copy" deleted from ArrayList
+2017-03-29 16:39:41 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:39:41 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:39:48 INFO  Task:102 - "FORA_copys_copy_copy" changed for "FORA_copys_copy_copy"
+2017-03-29 16:39:48 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: true to true
+2017-03-29 16:39:48 INFO  Task:102 - "FORA_copys_copy_copy" changed for "FORA_copys_copy_copy"
+2017-03-29 16:39:48 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: true to true
+2017-03-29 16:39:48 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:39:48 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:39:48 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:44:04 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:44:04 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:44:04 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:44:04 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:44:04 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:44:04 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:44:04 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:44:04 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:44:04 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:44:04 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:44:04 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:44:04 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 16:44:04 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:44:04 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:04 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:44:05 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:44:05 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:44:05 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:44:05 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:44:05 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:44:05 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:44:05 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:44:05 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:44:05 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:44:05 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:44:05 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:44:05 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 16:44:05 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:44:05 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:05 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:44:05 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:05 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:44:08 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:44:08 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:44:08 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:44:08 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:44:08 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:44:08 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:44:08 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:44:08 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:44:08 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:44:08 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:44:08 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:44:08 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 16:44:08 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:44:08 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:08 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:44:08 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:08 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:11 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:26 INFO  Task:46 - Task "" created. Start date: [2017-03-29 16:44:26.716]. Active: false
+2017-03-29 16:44:26 INFO  Task:102 - "" changed for "FORA_copys_copy_copy_copy"
+2017-03-29 16:44:26 INFO  Task:119 - "FORA_copys_copy_copy_copy" changed the status from: false to true
+2017-03-29 16:44:26 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy_copy" added to ArrayList
+2017-03-29 16:44:26 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:44:26 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:26 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy_copy" added to ArrayList
+2017-03-29 16:44:26 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:44:27 INFO  Task:46 - Task "" created. Start date: [2017-03-29 16:44:27.444]. Active: false
+2017-03-29 16:44:39 INFO  Task:102 - "" changed for "cvxvx"
+2017-03-29 16:44:39 INFO  Task:119 - "cvxvx" changed the status from: false to true
+2017-03-29 16:44:39 INFO  Task:102 - "cvxvx" changed for "cvxvx"
+2017-03-29 16:44:39 INFO  Task:119 - "cvxvx" changed the status from: true to true
+2017-03-29 16:44:39 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 16:44:39 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:44:39 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:39 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy_copy" added to ArrayList
+2017-03-29 16:44:39 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 16:44:39 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:44:48 INFO  ArrayTaskList:60 - The "FORA_copys_copy_copy_copy" deleted from ArrayList
+2017-03-29 16:44:48 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:44:48 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:44:48 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 16:44:48 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:52:05 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:52:05 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:52:05 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:52:05 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:52:05 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:52:05 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:52:05 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:52:05 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:52:05 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:52:05 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:52:05 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:52:05 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 16:52:05 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:52:05 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:52:05 INFO  Task:84 - Task "cvxvx" created. Start date: [2017-03-29 16:44:27.000] End date: [2017-03-30 16:44:27.000]. Active: false
+2017-03-29 16:52:05 INFO  Task:119 - "cvxvx" changed the status from: false to true
+2017-03-29 16:52:05 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 16:52:05 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:52:09 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 16:52:09 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 16:52:09 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 16:52:09 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 16:52:09 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 16:52:09 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 16:52:09 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 16:52:09 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 16:52:09 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 16:52:09 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 16:52:09 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 16:52:09 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 16:52:09 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 16:52:09 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:52:09 INFO  Task:84 - Task "cvxvx" created. Start date: [2017-03-29 16:44:27.000] End date: [2017-03-30 16:44:27.000]. Active: false
+2017-03-29 16:52:09 INFO  Task:119 - "cvxvx" changed the status from: false to true
+2017-03-29 16:52:09 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 16:52:09 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 16:52:10 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:52:10 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 16:52:10 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 16:58:56 INFO  Task:46 - Task "" created. Start date: [2017-03-29 16:58:56.266]. Active: false
+2017-03-29 16:58:56 INFO  Task:102 - "" changed for "cvxvx_copy"
+2017-03-29 16:58:56 INFO  Task:119 - "cvxvx_copy" changed the status from: false to true
+2017-03-29 16:58:56 INFO  ArrayTaskList:37 - The "cvxvx_copy" added to ArrayList
+2017-03-29 16:58:56 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 16:58:56 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 16:58:56 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 16:58:56 INFO  ArrayTaskList:37 - The "cvxvx_copy" added to ArrayList
+2017-03-29 16:58:56 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 17:11:38 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 17:11:38 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 17:11:38 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 17:11:38 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 17:11:38 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 17:11:38 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 17:11:38 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 17:11:38 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 17:11:38 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 17:11:38 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 17:11:38 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 17:11:38 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 17:11:38 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 17:11:38 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 17:11:38 INFO  Task:84 - Task "cvxvx" created. Start date: [2017-03-29 16:44:27.000] End date: [2017-03-30 16:44:27.000]. Active: false
+2017-03-29 17:11:38 INFO  Task:119 - "cvxvx" changed the status from: false to true
+2017-03-29 17:11:38 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 17:11:38 INFO  Task:84 - Task "cvxvx_copy" created. Start date: [2017-03-29 16:44:27.000] End date: [2017-03-30 16:44:27.000]. Active: false
+2017-03-29 17:11:38 INFO  Task:119 - "cvxvx_copy" changed the status from: false to true
+2017-03-29 17:11:38 INFO  ArrayTaskList:37 - The "cvxvx_copy" added to ArrayList
+2017-03-29 17:11:38 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 17:11:45 INFO  Task:84 - Task "10 sec " created. Start date: [2017-03-19 22:11:34.000] End date: [2017-03-20 22:11:34.000]. Active: false
+2017-03-29 17:11:45 INFO  Task:119 - "10 sec " changed the status from: false to true
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "10 sec " added to ArrayList
+2017-03-29 17:11:45 INFO  Task:84 - Task "21312312312" created. Start date: [2017-03-19 22:14:41.000] End date: [2017-03-20 22:14:41.000]. Active: false
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "21312312312" added to ArrayList
+2017-03-29 17:11:45 INFO  Task:84 - Task "erewrwerew" created. Start date: [2017-03-19 22:15:29.000] End date: [2017-03-25 22:15:29.000]. Active: false
+2017-03-29 17:11:45 INFO  Task:119 - "erewrwerew" changed the status from: false to true
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "erewrwerew" added to ArrayList
+2017-03-29 17:11:45 INFO  Task:46 - Task "asddsadsa" created. Start date: [2017-03-27 11:48:48.000]. Active: false
+2017-03-29 17:11:45 INFO  Task:119 - "asddsadsa" changed the status from: false to true
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "asddsadsa" added to ArrayList
+2017-03-29 17:11:45 INFO  Task:84 - Task "FORA_copys_copy_copy" created. Start date: [2017-03-27 11:50:28.000] End date: [2017-03-30 11:50:28.000]. Active: false
+2017-03-29 17:11:45 INFO  Task:119 - "FORA_copys_copy_copy" changed the status from: false to true
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 17:11:45 INFO  Task:84 - Task "cvxvx" created. Start date: [2017-03-29 16:44:27.000] End date: [2017-03-30 16:44:27.000]. Active: false
+2017-03-29 17:11:45 INFO  Task:119 - "cvxvx" changed the status from: false to true
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 17:11:45 INFO  Task:84 - Task "cvxvx_copy" created. Start date: [2017-03-29 16:44:27.000] End date: [2017-03-30 16:44:27.000]. Active: false
+2017-03-29 17:11:45 INFO  Task:119 - "cvxvx_copy" changed the status from: false to true
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "cvxvx_copy" added to ArrayList
+2017-03-29 17:11:45 INFO  TaskIO:119 - Text reading task SUCCESSFUL
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 17:11:45 INFO  ArrayTaskList:37 - The "cvxvx_copy" added to ArrayList
+2017-03-29 17:11:45 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 17:11:55 INFO  Task:46 - Task "" created. Start date: [2017-03-29 17:11:55.992]. Active: false
+2017-03-29 17:12:04 INFO  Task:102 - "" changed for "bfdd"
+2017-03-29 17:12:04 INFO  Task:119 - "bfdd" changed the status from: false to true
+2017-03-29 17:12:04 INFO  Task:102 - "bfdd" changed for "bfdd"
+2017-03-29 17:12:04 INFO  Task:119 - "bfdd" changed the status from: true to true
+2017-03-29 17:12:04 INFO  ArrayTaskList:37 - The "bfdd" added to ArrayList
+2017-03-29 17:12:04 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 17:12:04 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 17:12:04 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 17:12:04 INFO  ArrayTaskList:37 - The "cvxvx_copy" added to ArrayList
+2017-03-29 17:12:04 INFO  ArrayTaskList:37 - The "bfdd" added to ArrayList
+2017-03-29 17:12:04 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 17:12:13 INFO  ArrayTaskList:60 - The "cvxvx_copy" deleted from ArrayList
+2017-03-29 17:12:13 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 17:12:13 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 17:12:13 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 17:12:13 INFO  ArrayTaskList:37 - The "bfdd" added to ArrayList
+2017-03-29 17:12:13 INFO  Tasks:29 - Add in calendar list succes
+2017-03-29 17:13:03 INFO  ArrayTaskList:60 - The "bfdd" deleted from ArrayList
+2017-03-29 17:13:03 INFO  TaskIO:101 - Text writing task SUCCESSFUL
+2017-03-29 17:13:03 INFO  ArrayTaskList:37 - The "FORA_copys_copy_copy" added to ArrayList
+2017-03-29 17:13:03 INFO  ArrayTaskList:37 - The "cvxvx" added to ArrayList
+2017-03-29 17:13:03 INFO  Tasks:29 - Add in calendar list succes

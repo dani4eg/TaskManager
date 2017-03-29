@@ -135,12 +135,16 @@ public class EditController {
             if (chYes.isSelected()) task.setActive(true);
             else task.setActive(false);
             okClicked = true;
-            MainController.edit = true;
+            reEdit();
 //            synchronized (MainController.MONITOR) {
 //                MainController.MONITOR.notifyAll();
 //            }
         }
         else okClicked = false;
+    }
+
+    private static void reEdit() {
+        MainController.edit = true;
     }
 
     @FXML

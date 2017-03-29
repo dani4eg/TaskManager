@@ -8,7 +8,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.stage.Stage;
-import java.io.FileReader;
+
+import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -34,7 +35,7 @@ public class CalendarController {
     public void initialize() throws IOException, ParseException {
         list = new ArrayTaskList();
         String fileName = "files/tFile.txt";
-        TaskIO.read(list, new FileReader(fileName));
+        TaskIO.readText(list, new File(fileName));
     }
 
     public void setDialogStage(Stage dialogStage) {

@@ -101,20 +101,8 @@ public class LinkedTaskList extends TaskList implements Cloneable{
     }
 
     /**
-     * Метод возвращает список задач, которые будут выполнены в данном промежутке времени
-     * Создаем новый лист
-     * @param from задача должна быть выполнена не раньше заданного времени
-     * @param to задача должна быть выполнена не позже заданного времени
-     * если время следующего выполнения задачи относительно заданного времени from выполняется не раньше from и не позже to
-     * задача добавляется в список
-     * @return список с задачами
-     * @throws IllegalArgumentException исключение, если время или интервал отрицательное
-     */
-
-
-    /**
-     * Создание итератора
-     * @return итератор с переопределенными методами
+     * Iterator
+     * @return iterator
      */
     public Iterator iterator() {
         return new Iterator() {
@@ -122,21 +110,11 @@ public class LinkedTaskList extends TaskList implements Cloneable{
             private Link prev = null;
             private Link prev2 = null;
 
-            /**
-             * Проверка на наличие следующего элемента
-             * Если текущий элемент не пустой
-             * @return true
-             */
             @Override
             public boolean hasNext() {
                 return current != null;
             }
 
-            /**
-             * Метод перехода итератора на след элемент
-             * @throws NoSuchElementException если первый элемент равен null
-             * @return task
-             */
             @Override
             public Task next() {
                 if (first == null) {
@@ -149,12 +127,6 @@ public class LinkedTaskList extends TaskList implements Cloneable{
                 return prev.getTask();
             }
 
-            /**
-             * Метод удаления элемента
-             * @throws IllegalStateException, если next() не выполнится хоть раз
-             * Удаляем элемент
-             * Уменьшаем размер на 1
-             */
             @Override
             public void remove() {
                 if (prev == null) {
@@ -171,7 +143,6 @@ public class LinkedTaskList extends TaskList implements Cloneable{
                 size--;
             }
         };
-
     }
 
     @Override
@@ -236,6 +207,4 @@ public class LinkedTaskList extends TaskList implements Cloneable{
         }
         return clone;
     }
-
-
 }

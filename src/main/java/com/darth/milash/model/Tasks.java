@@ -9,16 +9,12 @@ import java.util.*;
  */
 public class Tasks {
 
-
     private static final Logger LOGGER = LoggerFactory.getLogger(Tasks.class);
     /**
-     * Метод возвращает список задач, которые будут выполнены в данном промежутке времени
-     * Создаем новый лист
-     * @param start задача должна быть выполнена не раньше заданного времени
-     * @param end задача должна быть выполнена не позже заданного времени
-     * если время следующего выполнения задачи относительно заданного времени from выполняется не раньше from и не позже to
-     * задача добавляется в список
-     * @return список с задачами
+     * Returns a list of tasks that will be performed in a given time interval
+     * @param start the task must be executed no earlier than the specified time
+     * @param end the task must be executed no later than the specified time
+     * @return list with tasks
      */
     public static Iterable<Task> incoming(Iterable<Task> tasks, Date start, Date end) {
         TaskList list = new ArrayTaskList();
@@ -31,10 +27,17 @@ public class Tasks {
             }
         }
         LOGGER.info("Add in calendar list succes");
-//        System.out.println(list);
         return list;
     }
 
+    /**
+     * Creates a map collection with tasks
+     * @param tasks the task
+     * @param start start date
+     * @param end end date
+     * @return map collection with tasks in a given time interval
+     * @throws IllegalArgumentException
+     */
     public static SortedMap<Date, Set<Task>> calendar(Iterable<Task> tasks, Date start, Date end)  throws IllegalArgumentException{
         if(end.before(start)) {
             LOGGER.error("The end date must not be earlier than start date");
@@ -47,7 +50,6 @@ public class Tasks {
             Task task = (Task)iterator.next();
             Date date = start;
             while((date.before(end) || date.equals(end))) {
-//                if (date.equals(task.nextTimeAfter(date)) && date.getTime() != -1) {
                 if (task.nextTimeAfter(date).getTime() == -1) {
                     break;
                 }
@@ -59,15 +61,11 @@ public class Tasks {
                     }
                     set.add(task);
                     map.put((Date) date.clone(), set);
-
                     date.setTime(date.getTime() + task.getRepeatInterval());
                 }
             }
         }
-
-
         return map;
     }
-
 }
 

@@ -4,4 +4,4 @@
 "erewrwerew" from [2017-03-19 22:15:29.000] to [2017-03-25 22:15:29.000] every [45 seconds] inactive;
 "asddsadsa" at [2017-03-27 11:48:48.000] inactive;
 "LOOL" at [2017-03-27 11:50:34.000] inactive;
-"FORA_copy" from [2017-03-27 11:50:28.000] to [2017-03-29 11:50:28.000] every [15 seconds] inactive.
+"FORA_copys_copy" from [2017-03-27 11:50:28.000] to [2017-03-29 11:50:28.000] every [15 seconds] inactive.

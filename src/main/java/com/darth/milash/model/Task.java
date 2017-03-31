@@ -20,7 +20,8 @@ public class Task implements Cloneable, Serializable {
     private boolean active = false;
     private Date date = null;
     private final SimpleDateFormat sdate = new SimpleDateFormat("[YYYY-MM-dd HH:mm:ss.SSS]", Locale.ENGLISH);
-
+    String timeNegative = "The time or interval is negative";
+    String endBeforeStart = "The end date before start date";
     private static final Logger LOGGER = LoggerFactory.getLogger(Task.class);
 
     /**
@@ -58,11 +59,11 @@ public class Task implements Cloneable, Serializable {
     public Task(String title, int start, int end, int interval) throws IllegalArgumentException {
         if (start < 0 || end <0 || interval <0) {
             LOGGER.error("The time or interval of {} can not be negative", title);
-            throw new IllegalArgumentException("The time or interval is negative");
+            throw new IllegalArgumentException(timeNegative);
         }
         else if (start > end) {
             LOGGER.error("The end date of {} must not be earlier than start date", title);
-            throw new IllegalArgumentException("The end date before start date");
+            throw new IllegalArgumentException(endBeforeStart);
         }
         this.title = title;
         this.start = new Date((long)start*1000);
@@ -72,11 +73,11 @@ public class Task implements Cloneable, Serializable {
     public Task(String title, Date start, Date end, int interval) throws IllegalArgumentException {
         if (interval <0) {
             LOGGER.error("The time or interval of {} can not be negative", title);
-            throw new IllegalArgumentException("The time or interval is negative");
+            throw new IllegalArgumentException(timeNegative);
         }
         else if (start.after(end)) {
             LOGGER.error("The end date of {} must not be earlier than start date", title);
-            throw new IllegalArgumentException("The end date before start date");
+            throw new IllegalArgumentException(endBeforeStart);
         }
         this.title = title;
         this.start = new Date(start.getTime());
@@ -165,11 +166,11 @@ public class Task implements Cloneable, Serializable {
     public void setTime(int start, int end, int interval) throws IllegalArgumentException {
         if (interval <0) {
             LOGGER.error("The time or interval of \"{}\" can not be negative", this.title);
-            throw new IllegalArgumentException("The time or interval is negative");
+            throw new IllegalArgumentException(timeNegative);
         }
         else if (start > end) {
             LOGGER.error("The end date of \"{}\" must not be earlier than start date", this.title);
-            throw new IllegalArgumentException("The end date before start date");
+            throw new IllegalArgumentException(endBeforeStart);
         }
         date = new Date((long)start*1000);
         this.end = new Date((long)end*1000);
@@ -189,11 +190,11 @@ public class Task implements Cloneable, Serializable {
     public void setTime(Date start, Date end, int interval) throws IllegalArgumentException {
         if (interval <0) {
             LOGGER.error("The time or interval of \"{}\" can not be negative", this.title);
-            throw new IllegalArgumentException("The time or interval is negative");
+            throw new IllegalArgumentException(timeNegative);
         }
         else if (start.after(end)) {
             LOGGER.error("The end date of \"{}\" must not be earlier than start date", this.title);
-            throw new IllegalArgumentException("The end date before start date");
+            throw new IllegalArgumentException(endBeforeStart);
         }
         this.end = new Date(end.getTime());
         LOGGER.info("\"{}\" changed the start date from: {} to: {}" +

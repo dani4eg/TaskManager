@@ -1,5 +1,6 @@
 package com.darth.milash.model;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import java.io.Serializable;
@@ -284,6 +285,8 @@ public class Task implements Cloneable, Serializable {
         return text;
     }
 
+
+    @SuppressFBWarnings(value="CN_IDIOM_NO_SUPER_CALL", justification="There is no parent for this class")
     public Task clone() throws CloneNotSupportedException {
         Task task;
         if (this.interval ==0) {

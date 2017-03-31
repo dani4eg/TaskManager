@@ -144,14 +144,22 @@ public class ArrayTaskList extends TaskList implements Cloneable {
     }
 
 
+
     public String toString2() {
-        String text = "";
-        for (int i = 0; i < size; i++) {
-            text += "\"" + getTask(i).getTitle() + "\"";
-            if (i==size-1) text+=".";
-            else text += ";\n";
+        StringBuilder buf = new StringBuilder();
+        for (int i = 0; i < size; ++i) {
+            buf.append(getTask((i)).getTitle());
+            if (i==size-1) buf.append('.');
+            else buf.append(";\n");
         }
-        return text;
+        return buf.toString();
+//        String text = "";
+//        for (int i = 0; i < size; i++) {
+//            text += "\"" + getTask(i).getTitle() + "\"";
+//            if (i==size-1) text+=".";
+//            else text += ";\n";
+//        }
+//        return text;
     }
 
     public ArrayTaskList clone() {

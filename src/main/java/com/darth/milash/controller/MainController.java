@@ -1,6 +1,7 @@
 package com.darth.milash.controller;
 
 import com.darth.milash.model.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
@@ -16,6 +17,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+@SuppressFBWarnings(value="NN_NAKED_NOTIFY", justification="Notify is not naked")
 public class MainController {
     private static final Logger LOGGER = LoggerFactory.getLogger(MainController.class);
     private static String fileName = "files/tFile.txt";
@@ -90,6 +92,7 @@ public class MainController {
             else active.setText("NO");
         }
     }
+
 
     @FXML
     public void deleteTask() throws FileNotFoundException, ParseException {
@@ -179,13 +182,13 @@ public class MainController {
 
 
     Thread myThread = new Thread(new Runnable() {
+        @SuppressFBWarnings(value="UW_UNCOND_WAIT", justification="Not unconditional wait")
         @Override
         public void run() {
             while (true) {
                 long waitmills;
                 Date sdate = new Date();
                 Date edate = new Date(sdate.getTime() + (66400000));
-
                 Map<Date, Set<Task>> map = Tasks.calendar(list, sdate, edate);
                 if (map.isEmpty()) {
                     try {

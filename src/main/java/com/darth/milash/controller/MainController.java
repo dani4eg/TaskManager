@@ -196,7 +196,7 @@ public class MainController {
                             MONITOR.wait();
                         }
                     } catch (InterruptedException e1) {
-                        LOGGER.error("Error");
+                        LOGGER.error("Error InterruptedException");
                     }
                 }
                 for (Map.Entry<Date, Set<Task>> pair : map.entrySet()) {
@@ -209,7 +209,7 @@ public class MainController {
                             MONITOR.wait(waitmills);
                         }
                     } catch (InterruptedException e) {
-                        LOGGER.error("Error");
+                        LOGGER.error("Error InterruptedException");
                     }
                     if (size == list.size() && !edit) {
                         for (Task task : pair.getValue()) {

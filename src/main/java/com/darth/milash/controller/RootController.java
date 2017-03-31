@@ -18,7 +18,7 @@ public class RootController {
     }
 
     /**
-     * Закрывает приложение.
+     * Close app
      */
     @FXML
     public void handleExit() {

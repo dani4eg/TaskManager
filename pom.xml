@@ -15,6 +15,8 @@
         <pmd.version>3.7</pmd.version>
         <findbugs.version>3.0.3</findbugs.version>
         <findbugs.rules.version>1.2.4</findbugs.rules.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <build>
@@ -83,22 +85,31 @@
                 <configuration>
                     <mainClass>com.darth.milash.MainApp</mainClass>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>create-jfxjar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.0.2</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.darth.milash.MainApp</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-jar-plugin</artifactId>-->
+                <!--<version>3.0.2</version>-->
+                <!--<configuration>-->
+                    <!--<archive>-->
+                        <!--<manifest>-->
+                            <!--<addClasspath>true</addClasspath>-->
+                            <!--<classpathPrefix>lib/</classpathPrefix>-->
+                            <!--<mainClass>com.darth.milash.MainApp</mainClass>-->
+                        <!--</manifest>-->
+                    <!--</archive>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
 
         </plugins>
     </build>
@@ -147,7 +158,37 @@
             <artifactId>annotations</artifactId>
             <version>3.0.1</version>
         </dependency>
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jxr-plugin &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-jxr-plugin</artifactId>-->
+            <!--<version>2.5</version>-->
+        <!--</dependency>-->
+
     </dependencies>
+
+    <reporting>
+
+        <plugins>
+
+            <plugin>
+
+                <groupId>org.apache.maven.plugins</groupId>
+
+                <artifactId>maven-jxr-plugin</artifactId>
+
+                <version>2.5</version>
+
+            </plugin>
+
+        </plugins>
+
+    </reporting>
+
+
+
+
 
 
 </project>
